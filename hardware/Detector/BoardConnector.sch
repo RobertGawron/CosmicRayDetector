@@ -1,0 +1,717 @@
+EESchema Schematic File Version 4
+LIBS:CosmicRayDetector-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2400 1700 2500 1700
+Wire Wire Line
+	2600 1700 2700 1700
+Wire Wire Line
+	2700 1700 2700 1500
+Wire Wire Line
+	3600 1450 3600 1600
+Wire Wire Line
+	3600 1700 3700 1700
+Wire Wire Line
+	3900 1450 3900 1500
+Wire Wire Line
+	3900 1700 3800 1700
+Wire Wire Line
+	4800 1700 4800 1600
+Wire Wire Line
+	4800 1700 4900 1700
+Wire Wire Line
+	5000 1700 5100 1700
+Wire Wire Line
+	5100 1700 5100 1500
+Wire Wire Line
+	6000 1450 6000 1600
+Wire Wire Line
+	6000 1700 6100 1700
+Wire Wire Line
+	6200 1700 6300 1700
+Wire Wire Line
+	6300 1700 6300 1500
+Wire Wire Line
+	2500 2700 2400 2700
+Wire Wire Line
+	2600 2700 2700 2700
+Wire Wire Line
+	2700 2700 2700 2800
+Wire Wire Line
+	3700 2700 3600 2700
+Wire Wire Line
+	3600 2700 3600 2900
+Wire Wire Line
+	3800 2700 3900 2700
+Wire Wire Line
+	3900 2700 3900 2800
+Wire Wire Line
+	4900 2700 4800 2700
+Wire Wire Line
+	4800 2700 4800 2900
+Wire Wire Line
+	5000 2700 5100 2700
+Wire Wire Line
+	5100 2700 5100 2800
+Wire Wire Line
+	6100 2700 6000 2700
+Wire Wire Line
+	6200 2700 6300 2700
+Wire Wire Line
+	2600 1700 2600 1900
+Wire Wire Line
+	2500 1700 2500 1850
+Wire Wire Line
+	2500 1850 2850 1850
+Wire Wire Line
+	2850 1850 2850 1950
+Connection ~ 2500 1850
+Wire Wire Line
+	2500 1850 2500 1950
+Wire Wire Line
+	2600 1900 2950 1900
+Wire Wire Line
+	2950 1900 2950 1950
+Connection ~ 2600 1900
+Wire Wire Line
+	2600 1900 2600 1950
+Wire Wire Line
+	2600 2450 2600 2500
+Wire Wire Line
+	2500 2450 2500 2550
+Wire Wire Line
+	2850 2450 2850 2550
+Wire Wire Line
+	2850 2550 2500 2550
+Connection ~ 2500 2550
+Wire Wire Line
+	2500 2550 2500 2700
+Wire Wire Line
+	2950 2450 2950 2500
+Wire Wire Line
+	2950 2500 2600 2500
+Connection ~ 2600 2500
+Wire Wire Line
+	2600 2500 2600 2700
+Wire Wire Line
+	2400 1450 2400 1600
+Wire Wire Line
+	2400 1600 2850 1600
+Connection ~ 2400 1600
+Wire Wire Line
+	2400 1600 2400 1700
+Wire Wire Line
+	2700 1500 2850 1500
+Connection ~ 2700 1500
+Wire Wire Line
+	2700 1500 2700 1450
+Wire Wire Line
+	3600 1600 4100 1600
+Connection ~ 3600 1600
+Wire Wire Line
+	3600 1600 3600 1700
+Wire Wire Line
+	3900 1500 4100 1500
+Connection ~ 3900 1500
+Wire Wire Line
+	3900 1500 3900 1700
+Connection ~ 4800 1600
+Wire Wire Line
+	4800 1600 4800 1450
+Wire Wire Line
+	4800 1600 5350 1600
+Wire Wire Line
+	5100 1500 5350 1500
+Connection ~ 5100 1500
+Wire Wire Line
+	5100 1500 5100 1450
+Wire Wire Line
+	6000 1600 6550 1600
+Connection ~ 6000 1600
+Wire Wire Line
+	6000 1600 6000 1700
+Wire Wire Line
+	6300 1500 6550 1500
+Connection ~ 6300 1500
+Wire Wire Line
+	6300 1500 6300 1450
+Text GLabel 2850 1600 2    50   Input ~ 0
+INT01
+Text GLabel 2850 1500 2    50   Input ~ 0
+INT02
+Text GLabel 4100 1600 2    50   Input ~ 0
+INT11
+Text GLabel 4100 1500 2    50   Input ~ 0
+INT12
+Text GLabel 5350 1600 2    50   Input ~ 0
+INT21
+Text GLabel 5350 1500 2    50   Input ~ 0
+INT22
+Text GLabel 6550 1600 2    50   Input ~ 0
+INT31
+Text GLabel 6550 1500 2    50   Input ~ 0
+INT32
+Wire Wire Line
+	2400 2700 2400 2900
+Connection ~ 2400 2900
+Wire Wire Line
+	2400 2900 2400 2950
+Wire Wire Line
+	2400 2900 2850 2900
+Wire Wire Line
+	2850 2800 2700 2800
+Connection ~ 2700 2800
+Wire Wire Line
+	2700 2800 2700 2950
+Wire Wire Line
+	4100 2900 3600 2900
+Connection ~ 3600 2900
+Wire Wire Line
+	3600 2900 3600 2950
+Wire Wire Line
+	4100 2800 3900 2800
+Connection ~ 3900 2800
+Wire Wire Line
+	3900 2800 3900 2950
+Wire Wire Line
+	5350 2900 4800 2900
+Connection ~ 4800 2900
+Wire Wire Line
+	4800 2900 4800 2950
+Wire Wire Line
+	5350 2800 5100 2800
+Connection ~ 5100 2800
+Wire Wire Line
+	5100 2800 5100 2950
+Wire Wire Line
+	6300 2700 6300 2800
+Wire Wire Line
+	6000 2700 6000 2900
+Wire Wire Line
+	6550 2900 6000 2900
+Connection ~ 6000 2900
+Wire Wire Line
+	6000 2900 6000 2950
+Wire Wire Line
+	6550 2800 6300 2800
+Connection ~ 6300 2800
+Wire Wire Line
+	6300 2800 6300 2950
+Text GLabel 2850 2900 2    50   Input ~ 0
+INT03
+Text GLabel 2850 2800 2    50   Input ~ 0
+INT04
+Text GLabel 4100 2900 2    50   Input ~ 0
+INT13
+Text GLabel 4100 2800 2    50   Input ~ 0
+INT14
+Text GLabel 5350 2900 2    50   Input ~ 0
+INT23
+Text GLabel 5350 2800 2    50   Input ~ 0
+INT24
+Text GLabel 6550 2900 2    50   Input ~ 0
+INT33
+Text GLabel 6550 2800 2    50   Input ~ 0
+INT34
+Text GLabel 1650 6150 0    50   Input ~ 0
+INT34
+Text GLabel 1650 6050 0    50   Input ~ 0
+INT33
+Text GLabel 1650 5950 0    50   Input ~ 0
+INT32
+Text GLabel 1650 5850 0    50   Input ~ 0
+INT31
+Text GLabel 1650 5650 0    50   Input ~ 0
+INT24
+Text GLabel 1650 5550 0    50   Input ~ 0
+INT23
+Text GLabel 1650 5450 0    50   Input ~ 0
+INT22
+Text GLabel 1650 5350 0    50   Input ~ 0
+INT21
+Text GLabel 1650 5150 0    50   Input ~ 0
+INT14
+Text GLabel 1650 5050 0    50   Input ~ 0
+INT13
+Text GLabel 1650 4950 0    50   Input ~ 0
+INT12
+Text GLabel 1650 4850 0    50   Input ~ 0
+INT11
+Text GLabel 1650 4650 0    50   Input ~ 0
+INT04
+Text GLabel 1650 4550 0    50   Input ~ 0
+INT03
+Text GLabel 1650 4450 0    50   Input ~ 0
+INT02
+Text GLabel 1650 4350 0    50   Input ~ 0
+INT01
+$Comp
+L Device:D D?
+U 1 1 5D1C261C
+P 1750 6400
+F 0 "D?" H 1750 6616 50  0000 C CNN
+F 1 "1n148" H 1750 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1750 6400 50  0001 C CNN
+F 3 "~" H 1750 6400 50  0001 C CNN
+	1    1750 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2622
+P 2050 6400
+F 0 "D?" H 2050 6616 50  0000 C CNN
+F 1 "1n148" H 2050 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2050 6400 50  0001 C CNN
+F 3 "~" H 2050 6400 50  0001 C CNN
+	1    2050 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2628
+P 2350 6400
+F 0 "D?" H 2350 6616 50  0000 C CNN
+F 1 "1n148" H 2350 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2350 6400 50  0001 C CNN
+F 3 "~" H 2350 6400 50  0001 C CNN
+	1    2350 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C262E
+P 2650 6400
+F 0 "D?" H 2650 6616 50  0000 C CNN
+F 1 "1n148" H 2650 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2650 6400 50  0001 C CNN
+F 3 "~" H 2650 6400 50  0001 C CNN
+	1    2650 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2634
+P 3100 6400
+F 0 "D?" H 3100 6616 50  0000 C CNN
+F 1 "1n148" H 3100 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3100 6400 50  0001 C CNN
+F 3 "~" H 3100 6400 50  0001 C CNN
+	1    3100 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C263A
+P 3400 6400
+F 0 "D?" H 3400 6616 50  0000 C CNN
+F 1 "1n148" H 3400 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3400 6400 50  0001 C CNN
+F 3 "~" H 3400 6400 50  0001 C CNN
+	1    3400 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2640
+P 3700 6400
+F 0 "D?" H 3700 6616 50  0000 C CNN
+F 1 "1n148" H 3700 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3700 6400 50  0001 C CNN
+F 3 "~" H 3700 6400 50  0001 C CNN
+	1    3700 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2646
+P 4000 6400
+F 0 "D?" H 4000 6616 50  0000 C CNN
+F 1 "1n148" H 4000 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4000 6400 50  0001 C CNN
+F 3 "~" H 4000 6400 50  0001 C CNN
+	1    4000 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C264C
+P 4450 6400
+F 0 "D?" H 4450 6616 50  0000 C CNN
+F 1 "1n148" H 4450 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4450 6400 50  0001 C CNN
+F 3 "~" H 4450 6400 50  0001 C CNN
+	1    4450 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2652
+P 4750 6400
+F 0 "D?" H 4750 6616 50  0000 C CNN
+F 1 "1n148" H 4750 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4750 6400 50  0001 C CNN
+F 3 "~" H 4750 6400 50  0001 C CNN
+	1    4750 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2658
+P 5050 6400
+F 0 "D?" H 5050 6616 50  0000 C CNN
+F 1 "1n148" H 5050 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5050 6400 50  0001 C CNN
+F 3 "~" H 5050 6400 50  0001 C CNN
+	1    5050 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C265E
+P 5350 6400
+F 0 "D?" H 5350 6616 50  0000 C CNN
+F 1 "1n148" H 5350 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5350 6400 50  0001 C CNN
+F 3 "~" H 5350 6400 50  0001 C CNN
+	1    5350 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2664
+P 5800 6400
+F 0 "D?" H 5800 6616 50  0000 C CNN
+F 1 "1n148" H 5800 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5800 6400 50  0001 C CNN
+F 3 "~" H 5800 6400 50  0001 C CNN
+	1    5800 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C266A
+P 6100 6400
+F 0 "D?" H 6100 6616 50  0000 C CNN
+F 1 "1n148" H 6100 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6100 6400 50  0001 C CNN
+F 3 "~" H 6100 6400 50  0001 C CNN
+	1    6100 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D1C2670
+P 6400 6400
+F 0 "D?" H 6400 6616 50  0000 C CNN
+F 1 "1n148" H 6400 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6400 6400 50  0001 C CNN
+F 3 "~" H 6400 6400 50  0001 C CNN
+	1    6400 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 6250 1750 4350
+Wire Wire Line
+	1650 4350 1750 4350
+Wire Wire Line
+	2050 6250 2050 4850
+Wire Wire Line
+	1650 4850 2050 4850
+Wire Wire Line
+	2350 6250 2350 5350
+Wire Wire Line
+	1650 5350 2350 5350
+Wire Wire Line
+	2650 6250 2650 5850
+Wire Wire Line
+	1650 5850 2650 5850
+Wire Wire Line
+	2650 6550 2650 6650
+Wire Wire Line
+	2650 6650 2350 6650
+Wire Wire Line
+	1750 6650 1750 6550
+Wire Wire Line
+	2050 6550 2050 6650
+Connection ~ 2050 6650
+Wire Wire Line
+	2350 6550 2350 6650
+Connection ~ 2350 6650
+Wire Wire Line
+	2350 6650 2200 6650
+Wire Wire Line
+	3100 6550 3100 6650
+Wire Wire Line
+	3100 6650 3400 6650
+Wire Wire Line
+	4000 6650 4000 6550
+Wire Wire Line
+	4450 6550 4450 6650
+Wire Wire Line
+	4450 6650 4750 6650
+Wire Wire Line
+	5350 6650 5350 6550
+$Comp
+L Device:D D?
+U 1 1 5D1C268C
+P 6750 6400
+F 0 "D?" H 6750 6616 50  0000 C CNN
+F 1 "1n148" H 6750 6525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6750 6400 50  0001 C CNN
+F 3 "~" H 6750 6400 50  0001 C CNN
+	1    6750 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 6550 5800 6650
+Wire Wire Line
+	5800 6650 6100 6650
+Wire Wire Line
+	6750 6650 6750 6550
+Wire Wire Line
+	3400 6550 3400 6650
+Connection ~ 3400 6650
+Wire Wire Line
+	3400 6650 3550 6650
+Wire Wire Line
+	3700 6550 3700 6650
+Connection ~ 3700 6650
+Wire Wire Line
+	3700 6650 4000 6650
+Wire Wire Line
+	4750 6550 4750 6650
+Connection ~ 4750 6650
+Wire Wire Line
+	4750 6650 4900 6650
+Wire Wire Line
+	5050 6550 5050 6650
+Connection ~ 5050 6650
+Wire Wire Line
+	5050 6650 5350 6650
+Wire Wire Line
+	3100 6250 3100 4450
+Wire Wire Line
+	1650 4450 3100 4450
+Wire Wire Line
+	3400 6250 3400 4950
+Wire Wire Line
+	1650 4950 3400 4950
+Wire Wire Line
+	3700 6250 3700 5450
+Wire Wire Line
+	1650 5450 3700 5450
+Wire Wire Line
+	4000 6250 4000 5950
+Wire Wire Line
+	1650 5950 4000 5950
+Wire Wire Line
+	4450 6250 4450 4550
+Wire Wire Line
+	4450 4550 1650 4550
+Wire Wire Line
+	4750 6250 4750 5050
+Wire Wire Line
+	1650 5050 4750 5050
+Wire Wire Line
+	5050 6250 5050 5550
+Wire Wire Line
+	5050 5550 1650 5550
+Wire Wire Line
+	5350 6250 5350 6050
+Wire Wire Line
+	1650 6050 5350 6050
+Wire Wire Line
+	5800 6250 5800 4650
+Wire Wire Line
+	5800 4650 1650 4650
+Wire Wire Line
+	6100 6250 6100 5150
+Wire Wire Line
+	6100 5150 1650 5150
+Wire Wire Line
+	6400 6250 6400 5650
+Wire Wire Line
+	1650 5650 6400 5650
+Wire Wire Line
+	6750 6250 6750 6150
+Wire Wire Line
+	6750 6150 1650 6150
+Wire Wire Line
+	6100 6550 6100 6650
+Connection ~ 6100 6650
+Wire Wire Line
+	6100 6650 6250 6650
+Wire Wire Line
+	6400 6550 6400 6650
+Connection ~ 6400 6650
+Wire Wire Line
+	6400 6650 6750 6650
+$Comp
+L Device:R R?
+U 1 1 5D1C26BF
+P 2050 7100
+F 0 "R?" H 2119 7054 50  0000 L CNN
+F 1 "680R" H 2119 7145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 7100 50  0001 C CNN
+F 3 "~" H 2050 7100 50  0001 C CNN
+	1    2050 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D1C26C5
+P 4750 7100
+F 0 "R?" H 4819 7054 50  0000 L CNN
+F 1 "680R" H 4819 7145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4680 7100 50  0001 C CNN
+F 3 "~" H 4750 7100 50  0001 C CNN
+	1    4750 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D1C26CB
+P 6100 7100
+F 0 "R?" H 6169 7054 50  0000 L CNN
+F 1 "680R" H 6169 7145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 7100 50  0001 C CNN
+F 3 "~" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1C26D1
+P 2050 6900
+F 0 "#PWR?" H 2050 6750 50  0001 C CNN
+F 1 "+5V" H 1992 6937 50  0000 R CNN
+F 2 "" H 2050 6900 50  0001 C CNN
+F 3 "" H 2050 6900 50  0001 C CNN
+	1    2050 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1C26D7
+P 4750 6900
+F 0 "#PWR?" H 4750 6750 50  0001 C CNN
+F 1 "+5V" H 4692 6937 50  0000 R CNN
+F 2 "" H 4750 6900 50  0001 C CNN
+F 3 "" H 4750 6900 50  0001 C CNN
+	1    4750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1C26DD
+P 6100 6900
+F 0 "#PWR?" H 6100 6750 50  0001 C CNN
+F 1 "+5V" H 6042 6937 50  0000 R CNN
+F 2 "" H 6100 6900 50  0001 C CNN
+F 3 "" H 6100 6900 50  0001 C CNN
+	1    6100 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6900 2050 6950
+Wire Wire Line
+	4750 6900 4750 6950
+Wire Wire Line
+	6100 6900 6100 6950
+Wire Wire Line
+	2050 7300 2050 7250
+Wire Wire Line
+	4750 7300 4750 7250
+Wire Wire Line
+	6100 7300 6100 7250
+Wire Wire Line
+	2050 6650 1750 6650
+Connection ~ 2200 6650
+Wire Wire Line
+	2200 6650 2050 6650
+Connection ~ 3550 6650
+Wire Wire Line
+	3550 6650 3700 6650
+Wire Wire Line
+	4900 7300 4750 7300
+Connection ~ 4900 6650
+Wire Wire Line
+	4900 6650 5050 6650
+Connection ~ 6250 6650
+Wire Wire Line
+	6250 6650 6400 6650
+Wire Wire Line
+	3400 7300 3400 7250
+Wire Wire Line
+	3400 6900 3400 6950
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1C26F5
+P 3400 6900
+F 0 "#PWR?" H 3400 6750 50  0001 C CNN
+F 1 "+5V" H 3342 6937 50  0000 R CNN
+F 2 "" H 3400 6900 50  0001 C CNN
+F 3 "" H 3400 6900 50  0001 C CNN
+	1    3400 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D1C26FB
+P 3400 7100
+F 0 "R?" H 3469 7054 50  0000 L CNN
+F 1 "680R" H 3469 7145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3330 7100 50  0001 C CNN
+F 3 "~" H 3400 7100 50  0001 C CNN
+	1    3400 7100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 6650 2200 7300
+Wire Wire Line
+	2050 7300 2200 7300
+Wire Wire Line
+	2200 7300 2300 7300
+Connection ~ 2200 7300
+Wire Wire Line
+	3550 6650 3550 7300
+Wire Wire Line
+	3400 7300 3550 7300
+Wire Wire Line
+	3550 7300 3650 7300
+Connection ~ 3550 7300
+Wire Wire Line
+	4900 6650 4900 7300
+Connection ~ 4900 7300
+Wire Wire Line
+	6250 6650 6250 7300
+Wire Wire Line
+	6100 7300 6250 7300
+Wire Wire Line
+	6250 7300 6350 7300
+Connection ~ 6250 7300
+Wire Wire Line
+	4900 7300 5000 7300
+Text GLabel 2300 7300 2    50   Input ~ 0
+COL0
+Text GLabel 3650 7300 2    50   Input ~ 0
+COL1
+Text GLabel 5000 7300 2    50   Input ~ 0
+COL2
+Text GLabel 6350 7300 2    50   Input ~ 0
+COL3
+$EndSCHEMATC
