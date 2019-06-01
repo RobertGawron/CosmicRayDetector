@@ -604,7 +604,7 @@ NoConn ~ 2300 5050
 NoConn ~ 2300 5150
 NoConn ~ 2300 5250
 $Sheet
-S 9600 6050 500  150 
+S 7300 6050 500  150 
 U 5CEF836A
 F0 "AnalogFrontend" 50
 F1 "AnalogFrontend.sch" 50
