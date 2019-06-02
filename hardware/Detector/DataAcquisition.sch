@@ -58,29 +58,14 @@ F 3 "~" H 10250 5600 50  0001 C CNN
 	1    10250 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D D51
-U 1 1 5D0AB3C5
-P 3300 4850
-F 0 "D51" H 3300 5066 50  0000 C CNN
-F 1 "1n148" H 3300 4975 50  0000 C CNN
-F 2 "Diode_SMD:D_MiniMELF" H 3300 4850 50  0001 C CNN
-F 3 "~" H 3300 4850 50  0001 C CNN
-	1    3300 4850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3300 5250 3300 5100
 Connection ~ 3300 5250
-Wire Wire Line
-	3300 4700 3300 4650
 Wire Wire Line
 	3300 5100 3600 5100
 Wire Wire Line
 	3600 5100 3600 4850
 Connection ~ 3300 5100
-Wire Wire Line
-	3300 5100 3300 5000
 Text Label 3600 4850 1    50   ~ 0
 VCC_PROG
 Wire Wire Line
@@ -215,7 +200,6 @@ Wire Wire Line
 	10550 5800 10800 5800
 NoConn ~ 10800 5600
 NoConn ~ 10800 5700
-NoConn ~ 10800 5800
 Wire Wire Line
 	10050 5700 9850 5700
 NoConn ~ 9850 5700
@@ -825,10 +809,6 @@ Text GLabel 4300 3700 2    50   Input ~ 0
 COL2
 Text GLabel 5650 3700 2    50   Input ~ 0
 COL3
-Text GLabel 2600 6850 0    50   Input ~ 0
-COL0
-Text GLabel 4000 5750 2    50   Input ~ 0
-COL1
 Text GLabel 2600 6650 0    50   Input ~ 0
 COL2
 Text GLabel 2600 6750 0    50   Input ~ 0
@@ -1155,4 +1135,17 @@ Text Label 9650 5250 1    50   ~ 0
 VCC_PROG
 Wire Wire Line
 	9650 5800 9650 5400
+Wire Wire Line
+	3300 4650 3300 5100
+Text GLabel 2600 6850 0    50   Input ~ 0
+COL1
+Text GLabel 4000 5750 2    50   Input ~ 0
+COL0
+Wire Wire Line
+	10800 5800 10800 5950
+Wire Wire Line
+	10800 5950 9650 5950
+Wire Wire Line
+	9650 5950 9650 5800
+Connection ~ 9650 5800
 $EndSCHEMATC
