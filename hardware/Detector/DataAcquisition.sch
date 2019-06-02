@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:chamber-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -969,4 +968,20 @@ Text GLabel 4000 6850 2    50   Input ~ 0
 COL2
 Text GLabel 5200 6850 2    50   Input ~ 0
 COL3
+Text GLabel 9400 2600 2    50   Input ~ 0
+COL0
+Text GLabel 9400 2700 2    50   Input ~ 0
+COL1
+Text GLabel 9400 2800 2    50   Input ~ 0
+COL2
+Text GLabel 9400 2900 2    50   Input ~ 0
+COL3
+Text GLabel 9400 2300 2    50   Input ~ 0
+ROW0
+Text GLabel 9400 2200 2    50   Input ~ 0
+ROW1
+Text GLabel 9400 2100 2    50   Input ~ 0
+ROW2
+Text GLabel 9400 2000 2    50   Input ~ 0
+ROW3
 $EndSCHEMATC

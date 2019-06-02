@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:chamber-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1472,7 +1471,7 @@ Wire Wire Line
 	6900 6000 6950 6000
 Connection ~ 6900 5700
 Wire Wire Line
-	7250 5400 7850 5400
+	7250 5400 7450 5400
 Wire Wire Line
 	7850 5400 7850 4950
 Wire Wire Line
@@ -1484,7 +1483,7 @@ Wire Wire Line
 	8600 6100 8600 5850
 Connection ~ 8600 5850
 Wire Wire Line
-	7250 6000 8150 6000
+	7250 6000 7650 6000
 Wire Wire Line
 	8150 6000 8150 5900
 Connection ~ 8150 5900
@@ -1496,7 +1495,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 6100 8600 6100
 Wire Wire Line
-	7250 5700 7850 5700
+	7250 5700 7550 5700
 Wire Wire Line
 	7850 5700 7850 6100
 Wire Wire Line
@@ -1504,23 +1503,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 5100 7350 6250
 Connection ~ 7350 5100
-Wire Wire Line
-	7350 5100 7450 5100
-Wire Wire Line
-	7450 5100 7450 6250
-Connection ~ 7450 5100
-Wire Wire Line
-	7450 5100 7550 5100
-Wire Wire Line
-	7550 5100 7550 6250
-Connection ~ 7550 5100
-Wire Wire Line
-	7550 5100 7650 5100
-Wire Wire Line
-	7650 5100 7650 6250
-Connection ~ 7650 5100
-Wire Wire Line
-	7650 5100 8150 5100
 Text GLabel 7350 6250 3    50   Input ~ 0
 ROW0
 Text GLabel 7450 6250 3    50   Input ~ 0
@@ -1548,34 +1530,34 @@ Connection ~ 6500 4600
 $Comp
 L 4xxx:HEF4093B U2
 U 2 1 5E666598
-P 4450 1600
-F 0 "U2" H 4450 1925 50  0000 C CNN
-F 1 "HEF4093B" H 4450 1834 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 1600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 4450 1600 50  0001 C CNN
-	2    4450 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:HEF4093B U2
-U 3 1 5E668E20
-P 2450 3500
-F 0 "U2" H 2450 3825 50  0000 C CNN
-F 1 "HEF4093B" H 2450 3734 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 3500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 2450 3500 50  0001 C CNN
-	3    2450 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:HEF4093B U2
-U 4 1 5E66A76F
 P 4450 3500
 F 0 "U2" H 4450 3825 50  0000 C CNN
 F 1 "HEF4093B" H 4450 3734 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 3500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 4450 3500 50  0001 C CNN
-	4    4450 3500
+	2    4450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:HEF4093B U2
+U 3 1 5E668E20
+P 2400 1600
+F 0 "U2" H 2400 1925 50  0000 C CNN
+F 1 "HEF4093B" H 2400 1834 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2400 1600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 2400 1600 50  0001 C CNN
+	3    2400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:HEF4093B U2
+U 4 1 5E66A76F
+P 2450 3500
+F 0 "U2" H 2450 3825 50  0000 C CNN
+F 1 "HEF4093B" H 2450 3734 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 3500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 2450 3500 50  0001 C CNN
+	4    2450 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1594,12 +1576,12 @@ $EndComp
 $Comp
 L 4xxx:HEF4093B U2
 U 1 1 5E66490D
-P 2400 1600
-F 0 "U2" H 2400 1925 50  0000 C CNN
-F 1 "HEF4093B" H 2400 1834 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2400 1600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 2400 1600 50  0001 C CNN
-	1    2400 1600
+P 4450 1600
+F 0 "U2" H 4450 1925 50  0000 C CNN
+F 1 "HEF4093B" H 4450 1834 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 1600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 4450 1600 50  0001 C CNN
+	1    4450 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1652,4 +1634,21 @@ Wire Wire Line
 Connection ~ 4100 3500
 Wire Wire Line
 	4100 3500 4100 3400
+Wire Wire Line
+	7350 5100 8150 5100
+Wire Wire Line
+	7450 6250 7450 5400
+Connection ~ 7450 5400
+Wire Wire Line
+	7450 5400 7850 5400
+Wire Wire Line
+	7550 6250 7550 5700
+Connection ~ 7550 5700
+Wire Wire Line
+	7550 5700 7850 5700
+Wire Wire Line
+	7650 6250 7650 6000
+Connection ~ 7650 6000
+Wire Wire Line
+	7650 6000 8150 6000
 $EndSCHEMATC
