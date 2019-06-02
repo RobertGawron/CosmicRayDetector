@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name IonizationChamber)(type KiCad)(uri ${KIPRJMOD}/IonizationChamber.pretty)(options "")(descr ""))
-  (lib (name SwitchButtonGeneric)(type KiCad)(uri ${KIPRJMOD}/SwitchButtonGeneric.pretty)(options "")(descr ""))
+  (lib (name IonizationChamber)(type KiCad)(uri ${KIPRJMOD}/IonizationChamber.pretty)(options "")(descr "")(disabled))
+  (lib (name SwitchButtonGeneric)(type KiCad)(uri ${KIPRJMOD}/SwitchButtonGeneric.pretty)(options "")(descr "")(disabled))
   (lib (name MuonDetector)(type KiCad)(uri ${KIPRJMOD}/MuonDetector.pretty)(options "")(descr ""))
 )
