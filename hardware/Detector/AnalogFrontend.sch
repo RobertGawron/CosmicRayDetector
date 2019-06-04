@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CosmicRayDetector-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -355,89 +356,97 @@ Wire Wire Line
 Wire Wire Line
 	3450 3350 3450 3500
 $Comp
-L MuonDetector:GM- GM2
+L CosmicRayDetector:GM--CosmicRayDetector GM2
 U 1 1 5D22EE36
 P 1500 1450
 F 0 "GM2" H 1606 1539 50  0000 L CNN
 F 1 "GM-" H 1606 1448 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 1500 1450 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 1500 1450 50  0001 C CNN
 F 3 "" H 1500 1450 50  0001 C CNN
 	1    1500 1450
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM- GM6
+L CosmicRayDetector:GM--CosmicRayDetector GM6
 U 1 1 5D24733D
 P 3450 1450
 F 0 "GM6" H 3528 1539 50  0000 L CNN
 F 1 "GM-" H 3528 1448 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 3450 1450 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 3450 1450 50  0001 C CNN
 F 3 "" H 3450 1450 50  0001 C CNN
 	1    3450 1450
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM- GM8
+L CosmicRayDetector:GM--CosmicRayDetector GM8
 U 1 1 5D2480AC
 P 3450 3350
 F 0 "GM8" H 3528 3439 50  0000 L CNN
 F 1 "GM-" H 3528 3348 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 3450 3350 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 3450 3350 50  0001 C CNN
 F 3 "" H 3450 3350 50  0001 C CNN
 	1    3450 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM- GM4
+L CosmicRayDetector:GM--CosmicRayDetector GM4
 U 1 1 5D248B22
 P 1500 3350
 F 0 "GM4" H 1578 3439 50  0000 L CNN
 F 1 "GM-" H 1578 3348 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 1500 3350 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 1500 3350 50  0001 C CNN
 F 3 "" H 1500 3350 50  0001 C CNN
 	1    1500 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM+ GM3
+L CosmicRayDetector:GM+-CosmicRayDetector GM3
 U 1 1 5D249D5F
 P 1500 3050
+AR Path="/5D249D5F" Ref="GM3"  Part="1" 
+AR Path="/5CEF836A/5D249D5F" Ref="GM3"  Part="1" 
 F 0 "GM3" H 1606 3054 50  0000 L CNN
 F 1 "GM+" H 1606 2963 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 1500 3050 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 1500 3050 50  0001 C CNN
 F 3 "" H 1500 3050 50  0001 C CNN
 	1    1500 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM+ GM7
+L CosmicRayDetector:GM+-CosmicRayDetector GM7
 U 1 1 5D24AAD1
 P 3450 3050
+AR Path="/5D24AAD1" Ref="GM7"  Part="1" 
+AR Path="/5CEF836A/5D24AAD1" Ref="GM7"  Part="1" 
 F 0 "GM7" H 3556 3054 50  0000 L CNN
 F 1 "GM+" H 3556 2963 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 3450 3050 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 3450 3050 50  0001 C CNN
 F 3 "" H 3450 3050 50  0001 C CNN
 	1    3450 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM+ GM5
+L CosmicRayDetector:GM+-CosmicRayDetector GM5
 U 1 1 5D24B23C
 P 3450 1150
+AR Path="/5D24B23C" Ref="GM5"  Part="1" 
+AR Path="/5CEF836A/5D24B23C" Ref="GM5"  Part="1" 
 F 0 "GM5" H 3556 1154 50  0000 L CNN
 F 1 "GM+" H 3556 1063 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 3450 1150 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 3450 1150 50  0001 C CNN
 F 3 "" H 3450 1150 50  0001 C CNN
 	1    3450 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L MuonDetector:GM+ GM1
+L CosmicRayDetector:GM+-CosmicRayDetector GM1
 U 1 1 5D24B845
 P 1500 1150
+AR Path="/5D24B845" Ref="GM1"  Part="1" 
+AR Path="/5CEF836A/5D24B845" Ref="GM1"  Part="1" 
 F 0 "GM1" H 1606 1154 50  0000 L CNN
 F 1 "GM+" H 1606 1063 50  0000 L CNN
-F 2 "MuonDetector:GeigerTube" H 1500 1150 50  0001 C CNN
+F 2 "CosmicRayDetector:GeigerTube" H 1500 1150 50  0001 C CNN
 F 3 "" H 1500 1150 50  0001 C CNN
 	1    1500 1150
 	1    0    0    -1  
