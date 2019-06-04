@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CosmicRayDetector-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -850,12 +851,12 @@ Wire Wire Line
 Wire Wire Line
 	2700 5750 2800 5750
 $Comp
-L MuonDetector:LCD_I2C U3
+L CosmicRayDetector:LCD_I2C-CosmicRayDetector U3
 U 1 1 5D191892
 P 5800 6350
 F 0 "U3" H 5572 6151 50  0000 R CNN
 F 1 "LCD_I2C" H 5572 6060 50  0000 R CNN
-F 2 "MuonDetector:LCD_I2C" H 5800 6350 50  0001 C CNN
+F 2 "CosmicRayDetector:LCD_I2C" H 5800 6350 50  0001 C CNN
 F 3 "" H 5800 6350 50  0001 C CNN
 	1    5800 6350
 	-1   0    0    -1  
