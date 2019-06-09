@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -458,7 +458,7 @@ F 3 "" H 1150 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 8400 6050 500  150 
+S 7550 4550 500  150 
 U 5CF2BB44
 F0 "DataAcquisition" 50
 F1 "DataAcquisition.sch" 50
@@ -604,7 +604,7 @@ NoConn ~ 2300 5050
 NoConn ~ 2300 5150
 NoConn ~ 2300 5250
 $Sheet
-S 7300 6050 500  150 
+S 7550 2800 500  150 
 U 5CEF836A
 F0 "AnalogFrontend" 50
 F1 "AnalogFrontend.sch" 50
@@ -879,4 +879,10 @@ Wire Wire Line
 Connection ~ 9000 1600
 Wire Wire Line
 	8700 1300 8700 1400
+$Sheet
+S 7550 3650 500  150 
+U 5D19D9F3
+F0 "BoardConnector" 50
+F1 "BoardConnector.sch" 50
+$EndSheet
 $EndSCHEMATC
