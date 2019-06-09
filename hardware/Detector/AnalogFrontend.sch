@@ -612,14 +612,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 4100 6700 4100
 Connection ~ 6800 4400
-Text GLabel 7350 6250 3    50   Input ~ 0
-ROW0
-Text GLabel 7450 6250 3    50   Input ~ 0
-ROW1
-Text GLabel 7550 6250 3    50   Input ~ 0
-ROW2
-Text GLabel 7650 6250 3    50   Input ~ 0
-ROW3
 $Comp
 L power:VCC #PWR013
 U 1 1 5E3676D4
