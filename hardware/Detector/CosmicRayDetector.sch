@@ -736,153 +736,99 @@ Text GLabel 4900 2150 1    50   Input ~ 0
 GM_LAMP_POLARIZATION
 Wire Wire Line
 	4750 2150 4900 2150
-Text GLabel 7200 1300 0    50   Input ~ 0
-GM_LAMP_POLARIZATION
-$Comp
-L power:GND #PWR03
-U 1 1 5D16C66B
-P 8700 1400
-F 0 "#PWR03" H 8700 1150 50  0001 C CNN
-F 1 "GND" H 8705 1227 50  0000 C CNN
-F 2 "" H 8700 1400 50  0001 C CNN
-F 3 "" H 8700 1400 50  0001 C CNN
-	1    8700 1400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J2
-U 1 1 5D23A0E4
-P 7600 1050
-F 0 "J2" H 7650 1267 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 7650 1176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical_SMD" H 7600 1050 50  0001 C CNN
-F 3 "~" H 7600 1050 50  0001 C CNN
-	1    7600 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J3
-U 1 1 5D23C030
-P 7600 1600
-F 0 "J3" H 7650 1817 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 7650 1726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 7600 1600 50  0001 C CNN
-F 3 "~" H 7600 1600 50  0001 C CNN
-	1    7600 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J5
-U 1 1 5D23C398
-P 9250 1600
-F 0 "J5" H 9300 1817 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 9300 1726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 9250 1600 50  0001 C CNN
-F 3 "~" H 9250 1600 50  0001 C CNN
-	1    9250 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J4
-U 1 1 5D23C61F
-P 9250 1050
-F 0 "J4" H 9300 1267 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 9300 1176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical_SMD" H 9250 1050 50  0001 C CNN
-F 3 "~" H 9250 1050 50  0001 C CNN
-	1    9250 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 1300 7350 1300
-Wire Wire Line
-	7350 1300 7350 1150
-Wire Wire Line
-	7350 1150 7400 1150
-Wire Wire Line
-	7350 1150 7350 1050
-Wire Wire Line
-	7350 1050 7400 1050
-Connection ~ 7350 1150
-Wire Wire Line
-	7350 1300 8000 1300
-Wire Wire Line
-	8000 1300 8000 1150
-Wire Wire Line
-	8000 1150 7900 1150
-Connection ~ 7350 1300
-Wire Wire Line
-	8000 1150 8000 1050
-Wire Wire Line
-	8000 1050 7900 1050
-Connection ~ 8000 1150
-Wire Wire Line
-	7350 1300 7350 1600
-Wire Wire Line
-	7350 1700 7400 1700
-Wire Wire Line
-	7400 1600 7350 1600
-Connection ~ 7350 1600
-Wire Wire Line
-	7350 1600 7350 1700
-Wire Wire Line
-	8000 1300 8000 1600
-Wire Wire Line
-	8000 1700 7900 1700
-Connection ~ 8000 1300
-Wire Wire Line
-	7900 1600 8000 1600
-Connection ~ 8000 1600
-Wire Wire Line
-	8000 1600 8000 1700
-Wire Wire Line
-	8700 1300 9000 1300
-Wire Wire Line
-	9650 1300 9650 1600
-Wire Wire Line
-	9650 1600 9550 1600
-Wire Wire Line
-	9550 1700 9650 1700
-Wire Wire Line
-	9650 1700 9650 1600
-Connection ~ 9650 1600
-Wire Wire Line
-	9550 1150 9650 1150
-Wire Wire Line
-	9650 1150 9650 1300
-Connection ~ 9650 1300
-Wire Wire Line
-	9550 1050 9650 1050
-Wire Wire Line
-	9650 1050 9650 1150
-Connection ~ 9650 1150
-Wire Wire Line
-	9050 1050 9000 1050
-Wire Wire Line
-	9000 1050 9000 1150
-Connection ~ 9000 1300
-Wire Wire Line
-	9000 1300 9650 1300
-Wire Wire Line
-	9050 1150 9000 1150
-Connection ~ 9000 1150
-Wire Wire Line
-	9000 1150 9000 1300
-Wire Wire Line
-	9050 1700 9000 1700
-Wire Wire Line
-	9000 1700 9000 1600
-Wire Wire Line
-	9000 1600 9050 1600
-Wire Wire Line
-	9000 1600 9000 1300
-Connection ~ 9000 1600
-Wire Wire Line
-	8700 1300 8700 1400
 $Sheet
 S 7550 3650 500  150 
 U 5D19D9F3
 F0 "BoardConnector" 50
 F1 "BoardConnector.sch" 50
 $EndSheet
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J2
+U 1 1 5D4B24EE
+P 6650 1450
+AR Path="/5D4B24EE" Ref="J2"  Part="1" 
+AR Path="/5D19D9F3/5D4B24EE" Ref="J?"  Part="1" 
+F 0 "J2" H 6700 1667 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6700 1576 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 6650 1450 50  0001 C CNN
+F 3 "~" H 6650 1450 50  0001 C CNN
+	1    6650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1700 6400 1550
+Wire Wire Line
+	6400 1550 6450 1550
+Wire Wire Line
+	6400 1550 6400 1450
+Wire Wire Line
+	6400 1450 6450 1450
+Connection ~ 6400 1550
+Wire Wire Line
+	7050 1700 7050 1550
+Wire Wire Line
+	7050 1550 6950 1550
+Wire Wire Line
+	7050 1550 7050 1450
+Wire Wire Line
+	7050 1450 6950 1450
+Connection ~ 7050 1550
+Text GLabel 6150 1600 1    50   Input ~ 0
+GM_LAMP_POLARIZATION
+Wire Wire Line
+	7050 1700 6400 1700
+Wire Wire Line
+	6400 1700 6150 1700
+Wire Wire Line
+	6150 1700 6150 1600
+Connection ~ 6400 1700
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J4
+U 1 1 5D4CB2E1
+P 6650 2200
+AR Path="/5D4CB2E1" Ref="J4"  Part="1" 
+AR Path="/5D19D9F3/5D4CB2E1" Ref="J?"  Part="1" 
+F 0 "J4" H 6700 2417 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6700 2326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2450 6400 2300
+Wire Wire Line
+	6400 2300 6450 2300
+Wire Wire Line
+	6400 2300 6400 2200
+Wire Wire Line
+	6400 2200 6450 2200
+Connection ~ 6400 2300
+Wire Wire Line
+	7050 2450 7050 2300
+Wire Wire Line
+	7050 2300 6950 2300
+Wire Wire Line
+	7050 2300 7050 2200
+Wire Wire Line
+	7050 2200 6950 2200
+Connection ~ 7050 2300
+Wire Wire Line
+	7050 2450 6400 2450
+Wire Wire Line
+	6400 2450 6150 2450
+Connection ~ 6400 2450
+$Comp
+L power:GND #PWR03
+U 1 1 5D4D154D
+P 6150 2550
+F 0 "#PWR03" H 6150 2300 50  0001 C CNN
+F 1 "GND" H 6155 2377 50  0000 C CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2550 6150 2450
 $EndSCHEMATC
