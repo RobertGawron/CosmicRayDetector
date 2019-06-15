@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CosmicRayDetector)(type Legacy)(uri ${KIPRJMOD}/CosmicRayDetector.lib)(options "")(descr ""))
+  (lib (name CosmicRayDetector-rescue)(type Legacy)(uri ${KIPRJMOD}/CosmicRayDetector-rescue.lib)(options "")(descr "")(disabled))
+)
