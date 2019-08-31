@@ -2,6 +2,11 @@
 
 **This project is unfinished.**
 
+[![Build Status](https://travis-ci.com/RobertGawron/CosmicRayDetector.svg?branch=master)](https://travis-ci.com/RobertGawron/CosmicRayDetector)
+
+(CI is checking only documentation)
+
+
 ## Principle of operation
 
 Cosmic radiation is a constant stream of high energy particles from deep space, when they arrive on Earth they collide with atmosphere's atoms. Due to theirs high-speed (near light speed), during those collisions a lot of particles are made, one of them are muons that can be observed with Geiger tubes.
