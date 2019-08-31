@@ -1,6 +1,13 @@
 # CosmicRayDetector
 
-**Current version of this project is not finished and is not working.**
+**This project is unfinished.**
+
+[![Build Status](https://travis-ci.com/RobertGawron/CosmicRayDetector.svg?branch=master)](https://travis-ci.com/RobertGawron/CosmicRayDetector)
+
+(CI is checking only documentation)
+
+
+## Principle of operation
 
 Cosmic radiation is a constant stream of high energy particles from deep space, when they arrive on Earth they collide with atmosphere's atoms. Due to theirs high-speed (near light speed), during those collisions a lot of particles are made, one of them are muons that can be observed with Geiger tubes.
 
@@ -12,4 +19,17 @@ I'm not sure if microcontroler is a suitable tool for this job, if no, then I wi
 
 There are similar projects around Internet, but they all have analog interface, this one is aiming to have digitally processed interface, so that it will be possible to present results in more readable form, or to analyze them further on PC.
 
-![sensor render](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/pictures/CosmicRayDetector.png)
+## System architecture
+
+![architecture](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/diagrams/ArchitectureOverview-1.png)
+
+## Hardware
+PCB was done in KiCAD.
+
+## Software
+* [Setting up development environment on Windows
+](https://github.com/RobertGawron/CosmicRayDetector/wiki/Setting-up-development-environment-on-Windows)
+
+## Hazards
+
+* **The device uses high voltage and can lead to unpleasant shock, injury or death. Don't touch the PCB or tubes when power is on.**
