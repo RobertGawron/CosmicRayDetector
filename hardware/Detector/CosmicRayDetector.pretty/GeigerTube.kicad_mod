@@ -1,4 +1,4 @@
-(module GeigerTube (layer F.Cu) (tedit 5CEA9F37)
+(module GeigerTube (layer F.Cu) (tedit 5D6E4CB8)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -17,4 +17,9 @@
   (fp_line (start -5 11) (end -5 5) (layer F.SilkS) (width 0.12))
   (pad 1 thru_hole circle (at 3 8) (size 3.5 3.5) (drill 2) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at -3 8) (size 3.5 3.5) (drill 2) (layers *.Cu *.Mask))
+  (model ../../mechanic/Cube.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
