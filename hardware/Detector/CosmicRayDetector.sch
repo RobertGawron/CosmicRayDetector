@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:CosmicRayDetector-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -29,12 +30,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2350 5200 2100
 Connection ~ 5200 2100
-$Sheet
-S 1650 4150 500  150 
-U 5CF2BB44
-F0 "DataAcquisition" 50
-F1 "DataAcquisition.sch" 50
-$EndSheet
 $Comp
 L Device:C C1
 U 1 1 5CF17EEF
@@ -133,8 +128,8 @@ NoConn ~ 4900 2500
 $Sheet
 S 1650 2400 500  150 
 U 5CEF836A
-F0 "AnalogFrontend" 50
-F1 "AnalogFrontend.sch" 50
+F0 "ADC" 50
+F1 "ADC.sch" 50
 $EndSheet
 Wire Wire Line
 	6200 2100 6200 2050
@@ -254,10 +249,4 @@ Wire Wire Line
 	4650 4650 4650 4600
 Wire Wire Line
 	5500 4650 5500 4600
-$Sheet
-S 1650 3250 500  150 
-U 5D19D9F3
-F0 "BoardConnector" 50
-F1 "BoardConnector.sch" 50
-$EndSheet
 $EndSCHEMATC
