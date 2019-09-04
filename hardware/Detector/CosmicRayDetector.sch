@@ -121,4 +121,10 @@ U 5D6F8E96
 F0 "PowerManagement" 50
 F1 "PowerManagement.sch" 50
 $EndSheet
+$Sheet
+S 1650 3450 500  300 
+U 5D715225
+F0 "MovementController" 50
+F1 "MovementController.sch" 50
+$EndSheet
 $EndSCHEMATC
