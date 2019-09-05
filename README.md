@@ -6,7 +6,7 @@
 
 (CI is checking only documentation)
 
-## Principle of operation
+## Summary
 
 Cosmic radiation is a constant stream of high energy particles from deep space, when they arrive on Earth they collide with atmosphere's atoms. Due to theirs high-speed (near light speed), during those collisions a lot of particles are made, one of them are muons that can be observed with Geiger tubes.
 
@@ -15,6 +15,8 @@ Earth has its own background radioactivity level and this would add to the measu
 This device has a grid of Geiger tubes and analyzes if a particle went through many of them, if yes, it's probably a muon, if no, it's background radiation. To help minimize background radiation,  lead shielding will be placed around Geiger tubes.
 
 There are similar projects around Internet, but they all have analog interface, this one is aiming to have digitally processed interface, so that it will be possible to present results in more readable form, or to analyze them further on PC.
+
+![render of the device](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/pictures/render_15_09.png)
 
 ## System architecture
 
