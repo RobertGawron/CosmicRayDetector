@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:CosmicRayDetector-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -472,7 +471,7 @@ U 1 1 5D7188A4
 P 1400 3150
 F 0 "R3" H 1331 3196 50  0000 R CNN
 F 1 "R" H 1331 3105 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1330 3150 50  0001 C CNN
 F 3 "~" H 1400 3150 50  0001 C CNN
 	1    1400 3150
 	1    0    0    -1  
@@ -500,7 +499,7 @@ U 1 1 5D7232A7
 P 1450 6150
 F 0 "R5" H 1381 6196 50  0000 R CNN
 F 1 "R" H 1381 6105 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1380 6150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 6150 50  0001 C CNN
 F 3 "~" H 1450 6150 50  0001 C CNN
 	1    1450 6150
 	1    0    0    -1  
@@ -528,7 +527,7 @@ U 1 1 5D725BC3
 P 1400 1700
 F 0 "R2" H 1331 1746 50  0000 R CNN
 F 1 "R" H 1331 1655 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1330 1700 50  0001 C CNN
 F 3 "~" H 1400 1700 50  0001 C CNN
 	1    1400 1700
 	1    0    0    -1  
