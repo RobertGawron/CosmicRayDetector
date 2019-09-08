@@ -1,7 +1,3 @@
-pillarWidth = 10;
-pillarHeight = 80;
-screwDiameter = 4;
-
 module pillar(width, height) {
     square([width, height], center=false);
 }
@@ -9,42 +5,59 @@ module pillar(width, height) {
 module pillars(width, height){ 
     for (angle = [0:60:360])
         rotate([0,0,angle])
-        translate([0,(-pillarWidth / 2),0])
+        translate([0,(-height / 2),0])
         pillar(width, height);
 }
 
-module outerRing() {
-    outerRingDiameter = pillarHeight + 10;
+module outerRing(distanceToCenterRotationPoint) {
+    outerRingDiameter = distanceToCenterRotationPoint + 5;
     difference(){
         circle(outerRingDiameter);        
-        circle(pillarHeight);    
+        circle(distanceToCenterRotationPoint);    
     }
 }
 
 module innerRing(){
-    innerRingDiameter = 20;
+    innerRingDiameter = 10;
     circle(innerRingDiameter);  
 }
 
-module screwsMountingPoints(){
-    screwRadiusToCenterRotationPoint = pillarHeight + 5;
+module screws(distanceToCenterRotationPoint, outterRingDiameter, screwDiameter){
+    screwRadiusToCenterRotationPoint = distanceToCenterRotationPoint + outterRingDiameter;
     
     for (angle = [0:60:360])
         rotate([0,0,angle])
         translate([screwRadiusToCenterRotationPoint,0,0])
-        circle(screwDiameter, center=true);
+        circle(screwDiameter);
 }
 
 module rearStator(){
+    pillarWidth = 6;
+    pillarHeight = 45;
+    screwDiameter = 2;
+
     union(){
         difference(){
-            outerRing(); 
-            screwsMountingPoints();
+            // drill suport for screws
+            union(){
+                outerRing(pillarHeight); 
+                screws(pillarHeight, 2.5, 5);
+            }
+            // drill holes for screws
+            screws(pillarHeight, 2.5, screwDiameter);
         }
         pillars(pillarHeight, pillarWidth);
         innerRing();
     }
 }
 
-linear_extrude(height = 10, center = true, convexity = 10, twist = 0)
+module ballBearingHandler(){
+    diameter = 4;
+    circle(diameter);       
+}
+
+linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
     rearStator();
+
+linear_extrude(height = 8, convexity = 10, twist = 0)
+    ballBearingHandler();
