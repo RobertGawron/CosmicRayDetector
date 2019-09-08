@@ -56,8 +56,4 @@ module ballBearingHandler(){
     circle(diameter);       
 }
 
-linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
-    rearStator();
 
-linear_extrude(height = 8, convexity = 10, twist = 0)
-    ballBearingHandler();
