@@ -15,9 +15,8 @@ module statorBasic(){
         }
 }
 
-module statorBars(statorLength){
-    linear_extrude(height = statorLength, convexity = 10, twist = 0) 
-        statorMountingPoints(pillarHeight, 4);
+module statorBars(){
+     statorMountingPoints(pillarHeight, 4);
 }
 
 // Don't use below modules in other files.

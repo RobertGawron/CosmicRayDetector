@@ -29,7 +29,7 @@ module rotorBars(){
 
 // Don't use below modules in other files.
 
-// TODO: DYI pillar/pillars in StatorBasic
+// TODO: DRY pillar/pillars in StatorBasic
 module pillar(width, height) {
     square([width, height], center=false);
 }

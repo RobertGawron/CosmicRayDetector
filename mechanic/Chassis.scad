@@ -1,5 +1,6 @@
 include <RotorBasic.scad>;
 include <StatorBasic.scad>;
+include <GMHolder.scad>;
 
 module FPGABoardMockup(){
 	include <PCBModelsFromKiCad/FPGABoardMockup.scad>;
@@ -15,9 +16,13 @@ module HighVoltageGMConnector(){
 module HighVoltageGenerator(){
 	include <PCBModelsFromKiCad/HighVoltageGenerator.scad>;
 }
-
-translate([140,-90,40])
+rotate([0,0,90])
+translate([145,-92,40])
 	HighVoltageGenerator();
+
+translate([0,0,37])
+	gmHolder();
+
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
@@ -51,21 +56,23 @@ module rotorComplete(){
 		}
 
 		color("MediumSlateBlue")
-		linear_extrude(height = rotorLength, convexity = 10, twist = 0) 
-			rotorBars();
+            linear_extrude(height = rotorLength, convexity = 10, twist = 0) 
+                rotorBars();
 	}
 }
 
-module statorComplete(){
-	color("Orange"){
-		translate([-50,0,0]){
+module statorComplete(){	
+	translate([-50,0,0]){
+		color("Orange"){
 			statorBasic();
-
-			translate([0,0,350])
-				statorBasic();
-				
-			statorBars(350);
 		}
+
+		translate([0,0,350])
+			statorBasic();
+		   
+		color("Silver")               
+			linear_extrude(height = 350, convexity = 10, twist = 0) 	
+				statorBars();		
 	}
 }
 
