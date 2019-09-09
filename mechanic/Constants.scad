@@ -1,0 +1,1 @@
+barHoleRadius=2;

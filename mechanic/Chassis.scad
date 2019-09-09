@@ -36,7 +36,6 @@ rotate([90,90,0])
 // TODO
 rotorPillarWidth = 6;
 rotorPillarHeight = 45;
-screwDiameter = 2;
 
 rotorLength = 320;
 
@@ -53,7 +52,7 @@ module rotorComplete(){
 
 		color("MediumSlateBlue")
 		linear_extrude(height = rotorLength, convexity = 10, twist = 0) 
-			rotorScrews();
+			rotorBars();
 	}
 }
 
@@ -65,7 +64,7 @@ module statorComplete(){
 			translate([0,0,350])
 				statorBasic();
 				
-			statorScrews(350);
+			statorBars(350);
 		}
 	}
 }

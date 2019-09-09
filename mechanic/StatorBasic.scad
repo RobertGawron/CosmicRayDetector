@@ -1,3 +1,27 @@
+include <Constants.scad>;
+
+pillarHeight = 45;
+
+module statorBasic(){
+	pillarWidth =10;
+
+    linear_extrude(height = 10, convexity = 10, twist = 0) 
+        difference(){    
+            union(){           
+                pillars(pillarHeight, pillarWidth);
+                statorMountingPoints(pillarHeight, 10);
+            }
+            statorMountingPoints(pillarHeight, 4);        
+        }
+}
+
+module statorBars(statorLength){
+    linear_extrude(height = statorLength, convexity = 10, twist = 0) 
+        statorMountingPoints(pillarHeight, 4);
+}
+
+// Don't use below modules in other files.
+
 module statorMountingPoints(pillarHeight, radius){
 for (angle = [0:120:360])
     rotate([0,0,angle])
@@ -15,27 +39,3 @@ module pillars(width, height){
         translate([0,(-height / 2),0])
         pillar(width, height);
 }
-
-
-// public
-
-module statorBasic(){
-	pillarWidth =10;
-	pillarHeight = 45;
-
-    linear_extrude(height = 10, convexity = 10, twist = 0) 
-        difference(){    
-            union(){           
-                pillars(pillarHeight, pillarWidth);
-                statorMountingPoints(pillarHeight, 10);
-            }
-            statorMountingPoints(pillarHeight, 4);        
-        }
-}
-
-module statorScrews(statorLength){
-    pillarHeight = 45;
-    linear_extrude(height = statorLength, convexity = 10, twist = 0) 
-        statorMountingPoints(pillarHeight, 4);
-}
-
