@@ -31,29 +31,37 @@ module screws(distanceToCenterRotationPoint, outterRingDiameter, screwDiameter){
         circle(screwDiameter);
 }
 
-module rearStator(){
-    pillarWidth = 6;
-    pillarHeight = 45;
-    screwDiameter = 2;
-
-    union(){
-        difference(){
-            // drill suport for screws
-            union(){
-                outerRing(pillarHeight); 
-                screws(pillarHeight, 2.5, 5);
-            }
-            // drill holes for screws
-            screws(pillarHeight, 2.5, screwDiameter);
-        }
-        pillars(pillarHeight, pillarWidth);
-        innerRing();
-    }
-}
-
 module ballBearingHandler(){
     diameter = 4;
     circle(diameter);       
 }
 
+// public
 
+module rotorBasic(){
+    pillarWidth = 6;
+    pillarHeight = 45;
+    screwDiameter = 2;
+
+    linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
+        union(){
+            difference(){
+                // drill suport for screws
+                union(){
+                    outerRing(pillarHeight); 
+                    screws(pillarHeight, 2.5, 5);
+                }
+                // drill holes for screws
+                screws(pillarHeight, 2.5, screwDiameter);
+            }
+            pillars(pillarHeight, pillarWidth);
+            innerRing();
+            ballBearingHandler();
+        }
+}
+
+
+
+module rotorScrews(){
+    screws(rotorPillarHeight, 2.5, screwDiameter);    
+}
