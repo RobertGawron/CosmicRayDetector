@@ -6,7 +6,7 @@
 
 (CI is checking only documentation)
 
-## Principle of operation
+## Summary
 
 Cosmic radiation is a constant stream of high energy particles from deep space, when they arrive on Earth they collide with atmosphere's atoms. Due to theirs high-speed (near light speed), during those collisions a lot of particles are made, one of them are muons that can be observed with Geiger tubes.
 
@@ -16,15 +16,22 @@ This device has a grid of Geiger tubes and analyzes if a particle went through m
 
 There are similar projects around Internet, but they all have analog interface, this one is aiming to have digitally processed interface, so that it will be possible to present results in more readable form, or to analyze them further on PC.
 
+![render of the device](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/pictures/render_15_09.png)
+
 ## System architecture
 
 ![architecture](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/diagrams/ArchitectureOverview-1.png)
 
-## Mechanic
+## 3D modeling
+* 3D printed parts were created in OpenSCAD.
+* KiCad component models were done in FreeCAD, because it's default tool for that.
+* KiCad PCBs were exported using FreeCAD to .scad files. It was the only way I found to import KiCad files to OpenSCAD. 
+
 Parts for 3D printing were done in FreeCAD.
 
 ## Hardware
-PCB was done in KiCAD.
+* PCB was done in KiCAD.
+* [DC/Dc converter from this Geiger-Muller counter](https://github.com/RobertGawron/GeigerMullerCounter) is used as a source of high voltage.
 
 ## Software
 
