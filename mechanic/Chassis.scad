@@ -19,23 +19,16 @@ module HighVoltageGMConnector(){
 module HighVoltageGenerator(){
 	include <PCBModelsFromKiCad/HighVoltageGenerator.scad>;
 }
-rotate([0,0,90])
-translate([145,-91,40])
-	HighVoltageGenerator();
 
-color("Red")
-translate([0,0,40])
-				highVoltageGeneratorHolder();
+translate([145,-92,40])
+	HighVoltageGenerator();
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
 		translate([90,-120,offset-20])
 			HighVoltageGMConnector();
 
-translate([0,0,50])
-	highVoltageGMConnectorHolder();
-translate([0,0,80])
-	highVoltageGMConnectorHolder();
+
 
 
 rotate([0,90,0])
@@ -67,9 +60,14 @@ module rotorComplete(){
 			translate([0,0,rotorLength])
 				rotorBasic();
 
-		//	translate([0,0,20])
-		//		highVoltageGeneratorHolder();
-		}
+			translate([0,0,20])
+				highVoltageGeneratorHolder();
+
+			translate([0,0,30])
+				highVoltageGMConnectorHolder();
+			translate([0,0,60])
+				highVoltageGMConnectorHolder();
+					}
 
 		color("MediumSlateBlue")
             linear_extrude(height = rotorLength, convexity = 10, twist = 0) 
@@ -92,5 +90,5 @@ module statorComplete(){
 	}
 }
 
-//rotorComplete();
-//statorComplete();
+rotorComplete();
+statorComplete();

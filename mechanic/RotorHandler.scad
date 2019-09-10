@@ -3,7 +3,7 @@
 include <Constants.scad>;
 
 RotorhandlerPillarWidth = 5;
-RotorhandlerPillarHeight = 45;
+RotorhandlerPillarHeight = 40;
 RotorhandlerOuterRingThickness = 6;
 RotorhandlerPillarsAmount = 4;
 
