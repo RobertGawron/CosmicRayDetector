@@ -2,7 +2,7 @@ include <Constants.scad>;
 StatorThickness = 8;
 
 
-statorBasic();
+//statorBasic();
 
 pillarHeight = 45;
 

@@ -2,12 +2,12 @@
 
 include <Constants.scad>;
 
-RotorhandlerPillarWidth = 4;
+RotorhandlerPillarWidth = 3;
 RotorhandlerPillarHeight = 95;
 RotorhandlerOuterRingThickness = 6;
 
 
-//rotorHandler();
+rotorHandler();
 
 module rotorHandler(){
 	barMountinSupportThickness = 4;
