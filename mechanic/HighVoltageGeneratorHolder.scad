@@ -1,6 +1,8 @@
 include <RotorHandler.scad>;
 
-module gmHolder() {
+//highVoltageGeneratorHolder();
+
+module highVoltageGeneratorHolder() {
 	pcbWidth = 50;
 	pcbHeight = 45;
 
@@ -21,5 +23,3 @@ module gmHolder() {
 				}
 			}
 }
-
-//gmHolder();

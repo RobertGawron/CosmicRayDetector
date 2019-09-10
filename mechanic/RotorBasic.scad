@@ -1,6 +1,8 @@
 include <Constants.scad>;
 include <RotorHandler.scad>;
 
+//rotorBasic();
+
 module rotorBasic(){
     linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
         union(){    
@@ -11,7 +13,7 @@ module rotorBasic(){
 }
 
 module rotorBars(){
-    screws(rotorPillarHeight, 2.5, barHoleRadius);    
+    screws(barHoleRadius);    
 }
 
 module innerRing(){
@@ -25,5 +27,3 @@ module ballBearingHandler(){
     diameter = 4;
     circle(diameter);       
 }
-
-//rotorBasic();

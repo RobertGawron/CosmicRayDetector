@@ -1,6 +1,7 @@
 include <RotorBasic.scad>;
 include <StatorBasic.scad>;
-include <GMHolder.scad>;
+include <HighVoltageGeneratorHolder.scad>;
+include <HighVoltageGMConnectorHolder.scad>;
 
 module FPGABoardMockup(){
 	include <PCBModelsFromKiCad/FPGABoardMockup.scad>;
@@ -20,8 +21,7 @@ rotate([0,0,90])
 translate([145,-92,40])
 	HighVoltageGenerator();
 
-translate([0,0,37])
-	gmHolder();
+
 
 
 rotate([0,90,0])
@@ -45,14 +45,19 @@ rotorPillarHeight = 45;
 rotorLength = 320;
 
 module rotorComplete(){
+	rotorStatorZDistance = 5;
+
 	translate([0,0,20]){
-		color("Aquamarine"){
+		color("SkyBlue"){
 			// rear rotor
 			rotorBasic();
 
 			// front rotor
 			translate([0,0,rotorLength])
 				rotorBasic();
+
+			translate([0,0,20])
+				highVoltageGeneratorHolder();
 		}
 
 		color("MediumSlateBlue")
@@ -62,7 +67,7 @@ module rotorComplete(){
 }
  
 module statorComplete(){	
-	translate([-50,0,0]){
+	translate([-pillarHeight,0,0]){
 		color("Orange"){
 			statorBasic();
 		}

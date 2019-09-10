@@ -1,8 +1,26 @@
+/* This module provides generic connector between bars and components. */
+
 include <Constants.scad>;
 
 RotorhandlerPillarWidth = 4;
 RotorhandlerPillarHeight = 95;
 RotorhandlerOuterRingThickness = 6;
+
+
+//rotorHandler();
+
+module rotorHandler(){
+	barMountinSupportThickness = 4;
+
+	difference(){
+		union(){
+			pillars();
+			outerRing(RotorhandlerPillarHeight/2,RotorhandlerOuterRingThickness);
+			screws(barHoleRadius + barMountinSupportThickness);
+		}
+		screws(barHoleRadius);
+	}
+}
 
 module outerRing(distanceToCenterRotationPoint, radius){
     outerRingDiameter = distanceToCenterRotationPoint + radius;
@@ -24,24 +42,11 @@ module pillar(){
 }
 
 
-module screws(outterRingDiameter){
+module screws(radius){
     screwRadiusToCenterRotationPoint = RotorhandlerPillarHeight/2 + RotorhandlerOuterRingThickness/2;
     
     for (angle = [0:60:360])
         rotate([0,0,angle])
         translate([screwRadiusToCenterRotationPoint,0,0])
-        circle(barHoleRadius);
+        circle(radius);
 }
-
-module rotorHandler(){
-	difference(){
-		union(){
-			pillars();
-			outerRing(RotorhandlerPillarHeight/2,RotorhandlerOuterRingThickness);
-
-		}
-		screws();
-	}
-}
-
-//rotorHandler();

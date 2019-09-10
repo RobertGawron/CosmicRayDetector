@@ -1,40 +1,43 @@
 include <Constants.scad>;
+StatorThickness = 8;
+
+
+statorBasic();
 
 pillarHeight = 45;
 
 module statorBasic(){
 	pillarWidth =10;
 
-    linear_extrude(height = 10, convexity = 10, twist = 0) 
+    linear_extrude(height = StatorThickness, convexity = 10, twist = 0) 
         difference(){    
             union(){           
-                pillars(pillarHeight, pillarWidth);
+                rotorPillars(pillarHeight, pillarWidth);
                 statorMountingPoints(pillarHeight, 10);
             }
-            statorMountingPoints(pillarHeight, 4);        
+            statorMountingPoints(pillarHeight, barHoleRadius);        
         }
 }
 
 module statorBars(){
-     statorMountingPoints(pillarHeight, 4);
+     statorMountingPoints(pillarHeight, barHoleRadius);
 }
 
-// Don't use below modules in other files.
 
 module statorMountingPoints(pillarHeight, radius){
-for (angle = [0:120:360])
+for (angle = [120:120:360])
     rotate([0,0,angle])
 	translate ([pillarHeight,0,0])
 	circle(radius);
 }
 
-module pillary(width, height){
+module rotorPillar(width, height){
     square([width, height], center=false);
 }
 
-module pillarsy(width, height){ 
+module rotorPillars(width, height){ 
     for (angle = [0:120:360])
         rotate([0,0,angle])
         translate([0,(-height / 2),0])
-        pillary(width, height);
+        rotorPillar(width, height);
 }
