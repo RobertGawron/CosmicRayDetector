@@ -2,12 +2,12 @@
 
 include <Constants.scad>;
 
-RotorhandlerPillarWidth = 3;
-RotorhandlerPillarHeight = 95;
+RotorhandlerPillarWidth = 5;
+RotorhandlerPillarHeight = 45;
 RotorhandlerOuterRingThickness = 6;
+RotorhandlerPillarsAmount = 4;
 
-
-rotorHandler();
+//rotorHandler();
 
 module rotorHandler(){
 	barMountinSupportThickness = 4;
@@ -15,7 +15,7 @@ module rotorHandler(){
 	difference(){
 		union(){
 			pillars();
-			outerRing(RotorhandlerPillarHeight/2,RotorhandlerOuterRingThickness);
+			outerRing(RotorhandlerPillarHeight,RotorhandlerOuterRingThickness);
 			screws(barHoleRadius + barMountinSupportThickness);
 		}
 		screws(barHoleRadius);
@@ -31,9 +31,10 @@ module outerRing(distanceToCenterRotationPoint, radius){
 }
 
 module pillars(){ 
-    for (angle = [0:60:360])
+	step = 360 / RotorhandlerPillarsAmount;
+    for (angle = [0:step:360])
         rotate([0,0,angle])
-        translate([0,(-RotorhandlerPillarHeight / 2),0])
+        translate([-RotorhandlerPillarWidth / 2,0,0])
         pillar();
 }
 
@@ -43,10 +44,11 @@ module pillar(){
 
 
 module screws(radius){
-    screwRadiusToCenterRotationPoint = RotorhandlerPillarHeight/2 + RotorhandlerOuterRingThickness/2;
-    
-    for (angle = [0:60:360])
-        rotate([0,0,angle])
+    screwRadiusToCenterRotationPoint = RotorhandlerPillarHeight + RotorhandlerOuterRingThickness/2;
+    step = 360 / RotorhandlerPillarsAmount;
+
+    for (angle = [0:step:360])
+        rotate([0,0,angle+90])
         translate([screwRadiusToCenterRotationPoint,0,0])
         circle(radius);
 }

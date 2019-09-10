@@ -20,8 +20,12 @@ module HighVoltageGenerator(){
 	include <PCBModelsFromKiCad/HighVoltageGenerator.scad>;
 }
 rotate([0,0,90])
-translate([145,-92,40])
+translate([145,-91,40])
 	HighVoltageGenerator();
+
+color("Red")
+translate([0,0,40])
+				highVoltageGeneratorHolder();
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
@@ -63,8 +67,8 @@ module rotorComplete(){
 			translate([0,0,rotorLength])
 				rotorBasic();
 
-			translate([0,0,20])
-				highVoltageGeneratorHolder();
+		//	translate([0,0,20])
+		//		highVoltageGeneratorHolder();
 		}
 
 		color("MediumSlateBlue")
@@ -88,5 +92,5 @@ module statorComplete(){
 	}
 }
 
-rotorComplete();
-statorComplete();
+//rotorComplete();
+//statorComplete();
