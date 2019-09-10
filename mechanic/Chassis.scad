@@ -60,7 +60,7 @@ module rotorComplete(){
                 rotorBars();
 	}
 }
-
+ 
 module statorComplete(){	
 	translate([-50,0,0]){
 		color("Orange"){

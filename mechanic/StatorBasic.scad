@@ -28,13 +28,13 @@ for (angle = [0:120:360])
 	circle(radius);
 }
 
-module pillar(width, height){
+module pillary(width, height){
     square([width, height], center=false);
 }
 
-module pillars(width, height){ 
+module pillarsy(width, height){ 
     for (angle = [0:120:360])
         rotate([0,0,angle])
         translate([0,(-height / 2),0])
-        pillar(width, height);
+        pillary(width, height);
 }
