@@ -1,20 +1,19 @@
-module pillar(width, height) {
-    square([width, height], center=false);
+include <Constants.scad>;
+include <RotorHandler.scad>;
+
+//rotorBasic();
+
+module rotorBasic(){
+    linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
+        union(){    
+			rotorHandler();
+            innerRing();
+            ballBearingHandler();
+        }
 }
 
-module pillars(width, height){ 
-    for (angle = [0:60:360])
-        rotate([0,0,angle])
-        translate([0,(-height / 2),0])
-        pillar(width, height);
-}
-
-module outerRing(distanceToCenterRotationPoint) {
-    outerRingDiameter = distanceToCenterRotationPoint + 5;
-    difference(){
-        circle(outerRingDiameter);        
-        circle(distanceToCenterRotationPoint);    
-    }
+module rotorBars(){
+    screws(barHoleRadius);    
 }
 
 module innerRing(){
@@ -22,46 +21,9 @@ module innerRing(){
     circle(innerRingDiameter);  
 }
 
-module screws(distanceToCenterRotationPoint, outterRingDiameter, screwDiameter){
-    screwRadiusToCenterRotationPoint = distanceToCenterRotationPoint + outterRingDiameter;
-    
-    for (angle = [0:60:360])
-        rotate([0,0,angle])
-        translate([screwRadiusToCenterRotationPoint,0,0])
-        circle(screwDiameter);
-}
+
 
 module ballBearingHandler(){
     diameter = 4;
     circle(diameter);       
-}
-
-// public
-
-module rotorBasic(){
-    pillarWidth = 6;
-    pillarHeight = 45;
-    screwDiameter = 2;
-
-    linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
-        union(){
-            difference(){
-                // drill suport for screws
-                union(){
-                    outerRing(pillarHeight); 
-                    screws(pillarHeight, 2.5, 5);
-                }
-                // drill holes for screws
-                screws(pillarHeight, 2.5, screwDiameter);
-            }
-            pillars(pillarHeight, pillarWidth);
-            innerRing();
-            ballBearingHandler();
-        }
-}
-
-
-
-module rotorScrews(){
-    screws(rotorPillarHeight, 2.5, screwDiameter);    
 }

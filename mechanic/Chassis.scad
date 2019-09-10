@@ -1,5 +1,9 @@
 include <RotorBasic.scad>;
 include <StatorBasic.scad>;
+include <HighVoltageGeneratorHolder.scad>;
+include <HighVoltageGMConnectorHolder.scad>;
+include <GMTube.scad>;
+
 
 module FPGABoardMockup(){
 	include <PCBModelsFromKiCad/FPGABoardMockup.scad>;
@@ -16,57 +20,73 @@ module HighVoltageGenerator(){
 	include <PCBModelsFromKiCad/HighVoltageGenerator.scad>;
 }
 
-translate([140,-90,40])
+translate([145,-92,40])
 	HighVoltageGenerator();
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
-		translate([80,-120,offset-20])
+		translate([90,-120,offset-20])
 			HighVoltageGMConnector();
+
+
+
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
-		translate([-60,-140,offset-20])
+		translate([-14,-140,offset-20])
 			CosmicRayDetector();
 
-rotate([90,90,0])
-	translate([-160,-140,40])
+
+translate([-120,-40,100])
+	rotate([90,90,0])
 		FPGABoardMockup();
 
-// TODO
-rotorPillarWidth = 6;
-rotorPillarHeight = 45;
-screwDiameter = 2;
+gmTubeOffsetZ =80;
+for (offsetX = [-10:10:10])
+	for (offsetY = [-10:10:10])
+		translate([offsetX,offsetY, gmTubeOffsetZ])
+			gmTube();
 
-rotorLength = 320;
 
 module rotorComplete(){
+	rotorStatorZDistance = 5;
+
 	translate([0,0,20]){
-		color("Aquamarine"){
+		color("Yellow"){
 			// rear rotor
 			rotorBasic();
 
 			// front rotor
 			translate([0,0,rotorLength])
 				rotorBasic();
-		}
+
+			translate([0,0,20])
+				highVoltageGeneratorHolder();
+
+			translate([0,0,30])
+				highVoltageGMConnectorHolder();
+			translate([0,0,60])
+				highVoltageGMConnectorHolder();
+					}
 
 		color("MediumSlateBlue")
-		linear_extrude(height = rotorLength, convexity = 10, twist = 0) 
-			rotorScrews();
+            linear_extrude(height = rotorLength, convexity = 10, twist = 0) 
+                rotorBars();
 	}
 }
-
-module statorComplete(){
-	color("Orange"){
-		translate([-50,0,0]){
+ 
+module statorComplete(){	
+	translate([-pillarHeight,0,0]){
+		color("Orange"){
 			statorBasic();
 
-			translate([0,0,350])
+			translate([0,0,320])
 				statorBasic();
-				
-			statorScrews(350);
 		}
+		   
+		color("Silver")               
+			linear_extrude(height = 320, convexity = 10, twist = 0) 	
+				statorBars();		
 	}
 }
 
