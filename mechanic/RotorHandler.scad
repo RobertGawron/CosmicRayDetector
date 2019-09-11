@@ -42,7 +42,6 @@ module pillar(){
     square([RotorhandlerPillarWidth, RotorhandlerPillarHeight], center=false);
 }
 
-
 module screws(radius){
     screwRadiusToCenterRotationPoint = RotorhandlerPillarHeight + RotorhandlerOuterRingThickness/2;
     step = 360 / RotorhandlerPillarsAmount;

@@ -1,6 +1,5 @@
 include <RotorHandler.scad>;
 
-
 //highVoltageGeneratorHolder();
 //highVoltageGeneratorScrew();
 
@@ -27,7 +26,6 @@ module highVoltageGeneratorHolder() {
 		}
 }
 
-
 module highVoltageGeneratorScrews(pcbHeight, pcbWidth){
 	// impossible to use loop because PCB is rectangular
 
@@ -50,7 +48,6 @@ module highVoltageGeneratorScrews(pcbHeight, pcbWidth){
 		rotate([0,0,180])
 		highVoltageGeneratorScrew();
 }
-
 
 module highVoltageGeneratorScrew(){
 	radiusOfHolder = 11;

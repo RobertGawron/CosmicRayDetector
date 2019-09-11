@@ -1,7 +1,6 @@
 include <Constants.scad>;
 StatorThickness = 8;
 
-
 //statorBasic();
 
 pillarHeight = 45;
@@ -22,7 +21,6 @@ module statorBasic(){
 module statorBars(){
      statorMountingPoints(pillarHeight, barHoleRadius);
 }
-
 
 module statorMountingPoints(pillarHeight, radius){
 for (angle = [120:120:360])

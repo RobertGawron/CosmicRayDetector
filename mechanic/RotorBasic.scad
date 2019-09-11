@@ -21,8 +21,6 @@ module innerRing(){
     circle(innerRingDiameter);  
 }
 
-
-
 module ballBearingHandler(){
     diameter = 4;
     circle(diameter);       
