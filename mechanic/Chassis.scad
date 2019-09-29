@@ -6,26 +6,32 @@ include <GMTube.scad>;
 
 
 module FPGABoardMockup(){
-	include <PCBModelsFromKiCad/FPGABoardMockup.scad>;
+	color("Green")
+		%import("PCBModelsFromKiCad/FPGABoardMockup.stl");	
 }
 
 module CosmicRayDetector(){
-	include <PCBModelsFromKiCad/CosmicRayDetector.scad>;
+	color("Green")
+		%import("PCBModelsFromKiCad/CosmicRayDetector.stl");	
 }
+
 module HighVoltageGMConnector(){
-	include <PCBModelsFromKiCad/HighVoltageGMConnector.scad>;
+	color("Green")
+		%import("PCBModelsFromKiCad/HighVoltageGMConnector.stl");	
 }
 
 module HighVoltageGenerator(){
-	include <PCBModelsFromKiCad/HighVoltageGenerator.scad>;
+	color("Green")
+		%import("PCBModelsFromKiCad/HighVoltageGenerator.stl");	
 }
 
-translate([145,-92,40])
-	HighVoltageGenerator();
+rotate([180,0,0])
+	translate([-4,6,-38]) // dirty hack to fit into KiCAD exports
+		HighVoltageGenerator();
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
-		translate([90,-120,offset-20])
+		translate([-60,-30,offset-20])
 			HighVoltageGMConnector();
 
 
@@ -33,12 +39,11 @@ rotate([0,90,0])
 
 rotate([0,90,0])
 	for (offset = [0:10:30])
-		translate([-14,-140,offset-20])
+		translate([-160,-45,offset-20])
 			CosmicRayDetector();
 
-
-translate([-120,-40,100])
-	rotate([90,90,0])
+rotate([90,90,180])
+	translate([-240,-15,40])	
 		FPGABoardMockup();
 
 gmTubeOffsetZ =80;
@@ -60,6 +65,7 @@ module rotorComplete(){
 			translate([0,0,rotorLength])
 				rotorBasic();
 
+			// TODO this doesn't hold HV connector
 			translate([0,0,20])
 				highVoltageGeneratorHolder();
 
