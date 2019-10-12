@@ -7,19 +7,19 @@ RotorhandlerPillarHeight = 40;
 RotorhandlerOuterRingThickness = 6;
 RotorhandlerPillarsAmount = 4;
 
-//rotorHandler();
+rotorHandler();
 
 module rotorHandler(){
-	barMountinSupportThickness = 4;
+    barMountinSupportThickness = 4;
 
-	difference(){
-		union(){
-			pillars();
-			outerRing(RotorhandlerPillarHeight,RotorhandlerOuterRingThickness);
-			screws(barHoleRadius + barMountinSupportThickness);
-		}
-		screws(barHoleRadius);
-	}
+    difference(){
+        union(){
+            pillars();
+            outerRing(RotorhandlerPillarHeight,RotorhandlerOuterRingThickness);
+            screws(barHoleRadius + barMountinSupportThickness);
+        }
+        screws(barHoleRadius);
+    }
 }
 
 module outerRing(distanceToCenterRotationPoint, radius){
@@ -31,7 +31,7 @@ module outerRing(distanceToCenterRotationPoint, radius){
 }
 
 module pillars(){ 
-	step = 360 / RotorhandlerPillarsAmount;
+    step = 360 / RotorhandlerPillarsAmount;
     for (angle = [0:step:360])
         rotate([0,0,angle])
         translate([-RotorhandlerPillarWidth / 2,0,0])

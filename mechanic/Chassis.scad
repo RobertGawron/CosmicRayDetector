@@ -1,4 +1,4 @@
-include <GenericRotor.scad>;
+//include <GenericRotorToStatorConnector.scad>;
 include <GenericStator.scad>;
 include <HighVoltageGeneratorHolder.scad>;
 include <HighVoltageGMConnectorHolder.scad>;

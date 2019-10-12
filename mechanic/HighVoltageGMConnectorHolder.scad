@@ -1,5 +1,5 @@
 include <Constants.scad>;
-include <RotorHandler.scad>;
+include <GenericRotorMountingPoint.scad>;
 
 //highVoltageGMConnectorHolder();
 
