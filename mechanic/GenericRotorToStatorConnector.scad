@@ -1,9 +1,9 @@
 include <Constants.scad>;
-include <make_generic_rotor_mounting_point.scad>;
+include <GenericRotorMountingPoint.scad>;
 
-//rotorBasic();
+make_generic_rotor_to_stator_connector();
 
-module rotorBasic(){
+module make_generic_rotor_to_stator_connector(){
     linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
         union(){    
             make_generic_rotor_mounting_point();
@@ -13,7 +13,7 @@ module rotorBasic(){
 }
 
 module rotorBars(){
-    screws(barHoleRadius);    
+  //  screws(barHoleRadius);    
 }
 
 module innerRing(){

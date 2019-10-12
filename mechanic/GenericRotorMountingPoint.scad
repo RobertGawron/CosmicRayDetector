@@ -2,10 +2,10 @@
 
 include <Constants.scad>;
 
-make_generic_rotor_mounting_pointPillarWidth = 5;
-make_generic_rotor_mounting_pointPillarHeight = 40;
-make_generic_rotor_mounting_pointOuterRingThickness = 6;
-make_generic_rotor_mounting_pointPillarsAmount = 4;
+RotorMountingPointPillarWidth = 5;
+RotorMountingPointPillarHeight = 40;
+RotorMountingPointmake_outer_ringThickness = 6;
+RotorMountingPointPillarsAmount = 4;
 
 make_generic_rotor_mounting_point();
 
@@ -15,36 +15,36 @@ module make_generic_rotor_mounting_point(){
     difference(){
         union(){
             pillars();
-            outerRing(make_generic_rotor_mounting_pointPillarHeight,make_generic_rotor_mounting_pointOuterRingThickness);
-            screws(barHoleRadius + barMountinSupportThickness);
+            make_outer_ring(RotorMountingPointPillarHeight,RotorMountingPointmake_outer_ringThickness);
+            make_generic_rotor_mounting_circle_at_pillar_end(barHoleRadius + barMountinSupportThickness);
         }
-        screws(barHoleRadius);
+        make_generic_rotor_mounting_circle_at_pillar_end(barHoleRadius);
     }
 }
 
-module outerRing(distanceToCenterRotationPoint, radius){
-    outerRingDiameter = distanceToCenterRotationPoint + radius;
+module make_outer_ring(distanceToCenterRotationPoint, radius){
+    make_outer_ringDiameter = distanceToCenterRotationPoint + radius;
     difference(){
-        circle(outerRingDiameter);        
+        circle(make_outer_ringDiameter);        
         circle(distanceToCenterRotationPoint);    
     }
 }
 
 module pillars(){ 
-    step = 360 / make_generic_rotor_mounting_pointPillarsAmount;
+    step = 360 / RotorMountingPointPillarsAmount;
     for (angle = [0:step:360])
         rotate([0,0,angle])
-        translate([-make_generic_rotor_mounting_pointPillarWidth / 2,0,0])
+        translate([-RotorMountingPointPillarWidth / 2,0,0])
         pillar();
 }
 
 module pillar(){
-    square([make_generic_rotor_mounting_pointPillarWidth, make_generic_rotor_mounting_pointPillarHeight], center=false);
+    square([RotorMountingPointPillarWidth, RotorMountingPointPillarHeight], center=false);
 }
 
-module screws(radius){
-    screwRadiusToCenterRotationPoint = make_generic_rotor_mounting_pointPillarHeight + make_generic_rotor_mounting_pointOuterRingThickness/2;
-    step = 360 / make_generic_rotor_mounting_pointPillarsAmount;
+module make_generic_rotor_mounting_circle_at_pillar_end(radius){
+    screwRadiusToCenterRotationPoint = RotorMountingPointPillarHeight + RotorMountingPointmake_outer_ringThickness/2;
+    step = 360 / RotorMountingPointPillarsAmount;
 
     for (angle = [0:step:360])
         rotate([0,0,angle+90])

@@ -6,7 +6,7 @@ include <GMTube.scad>;
 
 
 module FPGABoardMockup(){
-    color("Green")
+    color("White")
         %import("PCBModelsFromKiCad/FPGABoardMockup.stl");    
 }
 
@@ -59,11 +59,11 @@ module make_complete_rotor(){
     translate([0,0,20]){
         color("Yellow"){
             // rear rotor
-            rotorBasic();
+            make_generic_rotor_to_stator_connector();
 
             // front rotor
             translate([0,0,rotorLength])
-                rotorBasic();
+                make_generic_rotor_to_stator_connector();
 
             // TODO this doesn't hold HV connector
             translate([0,0,20])
