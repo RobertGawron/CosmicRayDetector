@@ -15,7 +15,7 @@ module highVoltageGeneratorHolder() {
                     translate([-pcbHeight/2 - holderAroundPCBThickness, -pcbWidth/2 - holderAroundPCBThickness, 0])
                         square([pcbHeight + (2*holderAroundPCBThickness), pcbWidth + (2*holderAroundPCBThickness)]);
                     pillars();
-                    rotorHandler();
+                    make_generic_rotor_mounting_point();
                 }
                  translate([-pcbHeight/2, -pcbWidth/2, 0])
                     square([pcbHeight, pcbWidth]);

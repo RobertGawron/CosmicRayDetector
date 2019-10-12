@@ -1,4 +1,4 @@
-//include <GenericRotorToStatorConnector.scad>;
+include <GenericRotorToStatorConnector.scad>;
 include <GenericStator.scad>;
 include <HighVoltageGeneratorHolder.scad>;
 include <HighVoltageGMConnectorHolder.scad>;
@@ -53,7 +53,7 @@ for (offsetX = [-10:10:10])
             gmTube();
 
 
-module rotorComplete(){
+module make_complete_rotor(){
     rotorStatorZDistance = 5;
 
     translate([0,0,20]){
@@ -81,13 +81,13 @@ module rotorComplete(){
     }
 }
  
-module statorComplete(){    
+module make_complete_stator(){    
     translate([-pillarHeight,0,0]){
         color("Orange"){
-            statorBasic();
+            make_generic_stator();
 
             translate([0,0,320])
-                statorBasic();
+                make_generic_stator();
         }
            
         color("Silver")               
@@ -96,5 +96,5 @@ module statorComplete(){
     }
 }
 
-rotorComplete();
-statorComplete();
+make_complete_rotor();
+make_complete_stator();

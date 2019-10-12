@@ -13,6 +13,6 @@ module highVoltageGMConnectorHolder()
         union(){
         translate([-pcbHeight/2 - holderAroundPCBThickness, -pcbWidth/2 - holderAroundPCBThickness, 0])
                         square([pcbHeight + (2*holderAroundPCBThickness), pcbWidth + (2*holderAroundPCBThickness)]);
-        rotorHandler();
+        make_generic_rotor_mounting_point();
     }
 }

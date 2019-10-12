@@ -2,20 +2,20 @@
 
 include <Constants.scad>;
 
-RotorhandlerPillarWidth = 5;
-RotorhandlerPillarHeight = 40;
-RotorhandlerOuterRingThickness = 6;
-RotorhandlerPillarsAmount = 4;
+make_generic_rotor_mounting_pointPillarWidth = 5;
+make_generic_rotor_mounting_pointPillarHeight = 40;
+make_generic_rotor_mounting_pointOuterRingThickness = 6;
+make_generic_rotor_mounting_pointPillarsAmount = 4;
 
-rotorHandler();
+make_generic_rotor_mounting_point();
 
-module rotorHandler(){
+module make_generic_rotor_mounting_point(){
     barMountinSupportThickness = 4;
 
     difference(){
         union(){
             pillars();
-            outerRing(RotorhandlerPillarHeight,RotorhandlerOuterRingThickness);
+            outerRing(make_generic_rotor_mounting_pointPillarHeight,make_generic_rotor_mounting_pointOuterRingThickness);
             screws(barHoleRadius + barMountinSupportThickness);
         }
         screws(barHoleRadius);
@@ -31,20 +31,20 @@ module outerRing(distanceToCenterRotationPoint, radius){
 }
 
 module pillars(){ 
-    step = 360 / RotorhandlerPillarsAmount;
+    step = 360 / make_generic_rotor_mounting_pointPillarsAmount;
     for (angle = [0:step:360])
         rotate([0,0,angle])
-        translate([-RotorhandlerPillarWidth / 2,0,0])
+        translate([-make_generic_rotor_mounting_pointPillarWidth / 2,0,0])
         pillar();
 }
 
 module pillar(){
-    square([RotorhandlerPillarWidth, RotorhandlerPillarHeight], center=false);
+    square([make_generic_rotor_mounting_pointPillarWidth, make_generic_rotor_mounting_pointPillarHeight], center=false);
 }
 
 module screws(radius){
-    screwRadiusToCenterRotationPoint = RotorhandlerPillarHeight + RotorhandlerOuterRingThickness/2;
-    step = 360 / RotorhandlerPillarsAmount;
+    screwRadiusToCenterRotationPoint = make_generic_rotor_mounting_pointPillarHeight + make_generic_rotor_mounting_pointOuterRingThickness/2;
+    step = 360 / make_generic_rotor_mounting_pointPillarsAmount;
 
     for (angle = [0:step:360])
         rotate([0,0,angle+90])
