@@ -6,7 +6,7 @@ include <RotorHandler.scad>;
 module rotorBasic(){
     linear_extrude(height = 4, center = true, convexity = 10, twist = 0)
         union(){    
-			rotorHandler();
+            rotorHandler();
             innerRing();
             ballBearingHandler();
         }
