@@ -2,7 +2,7 @@
 
 **This project is unfinished.**
 
-[![Build Status](https://travis-ci.com/RobertGawron/CosmicRayDetector.svg?branch=master)](https://travis-ci.com/RobertGawron/CosmicRayDetector)
+[![Docs Generation](https://github.com/RobertGawron/CosmicRayDetector/workflows/Docs%20Generation/badge.svg)](https://github.com/RobertGawron/CosmicRayDetector/actions?query=workflow%3A%22Docs+Generation%22)
 
 (CI is checking only documentation)
 
@@ -16,22 +16,29 @@ This device has a grid of Geiger tubes and analyzes if a particle went through m
 
 There are similar projects around Internet, but they all have analog interface, this one is aiming to have digitally processed interface, so that it will be possible to present results in more readable form, or to analyze them further on PC.
 
-![render of the device](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/pictures/render_15_09.png)
 
 ## System architecture
 
-![architecture](https://raw.githubusercontent.com/RobertGawron/CosmicRayDetector/master/documentation/diagrams/ArchitectureOverview-1.png)
+Documentation/Diagrams/ArchitectureOverview.svg
 
-## 3D modeling
+<img src="./Documentation/Diagrams/ArchitectureOverview.svg"  width="100%">
+
+
+## Overwiew of the mechanical design
+
+![render of the device](./Documentation/Pictures/render_15_09.png)
+
 * 3D printed parts were created in OpenSCAD.
 * KiCad component models were done in FreeCAD, because it's default tool for that.
 * KiCad PCBs were exported using FreeCAD to .scad files. It was the only way I found to import KiCad files to OpenSCAD. 
 
 Parts for 3D printing were done in FreeCAD.
 
+
 ## Hardware
-* PCB was done in KiCAD.
+* PCB was designed in KiCAD.
 * [DC/Dc converter from this Geiger-Muller counter](https://github.com/RobertGawron/GeigerMullerCounter) is used as a source of high voltage.
+
 
 ## Software
 
