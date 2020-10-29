@@ -1,7 +1,5 @@
 include <GenericRotorMountingPoint.scad>;
 
-//highVoltageGeneratorHolder();
-
 module highVoltageGeneratorHolder() {
     pcbWidth = 50;
     pcbHeight = 45;

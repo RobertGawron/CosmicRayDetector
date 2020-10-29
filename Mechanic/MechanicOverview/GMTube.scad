@@ -1,12 +1,8 @@
-GMTubeBodyLength = 95;
-GMTubeConnectorLength = 9;
 
-GMTubeBodyRadius = 5;
-GMTubeConnectorRadius = 2;
-
-//gmTube();
-
-module gmTube()
+module Geiger_Tube(GMTubeBodyLength,
+                GMTubeConnectorLength,
+                GMTubeBodyRadius,
+                GMTubeConnectorRadius)
 {
 // body
 translate([0,0,GMTubeBodyLength/2 + GMTubeConnectorLength])
