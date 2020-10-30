@@ -23,7 +23,7 @@ module Circles_Around_Mounting_Holes(diameter)
     }
 }
 
-module HV_Generator_Holder(BarHeight, ScrewSupportHeight)
+module Display_Holder(BarHeight, ScrewSupportHeight)
 {
     difference()
     {
