@@ -4,7 +4,6 @@
 
 [![Docs Generation](https://github.com/RobertGawron/CosmicRayDetector/workflows/Docs%20Generation/badge.svg)](https://github.com/RobertGawron/CosmicRayDetector/actions?query=workflow%3A%22Docs+Generation%22)
 
-(CI is checking only documentation)
 
 ## Summary
 
@@ -19,14 +18,12 @@ There are similar projects around Internet, but they all have analog interface, 
 
 ## System architecture
 
-Documentation/Diagrams/ArchitectureOverview.svg
-
 <img src="./Documentation/Diagrams/ArchitectureOverview.svg"  width="100%">
 
 
 ## Overwiew of the mechanical design
 
-![render of the device](./Documentation/Pictures/render_15_09.png)
+![render of the device](./Documentation/Pictures/render_31_10_2020.png)
 
 * 3D printed parts were created in OpenSCAD.
 * KiCad component models were done in FreeCAD, because it's default tool for that.

@@ -4,6 +4,9 @@ import re
 scad_generated_file_template = """
 include <scad_input_filename>
 
+$fs = 0.25;
+$fa = 25;
+
 scad_module();
 
 """
