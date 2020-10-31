@@ -1,9 +1,12 @@
 include <HorizontalRods.scad>;
+include <GenericPCB.scad>;
 
 module HV_Generator()
 {
-    linear_extrude(height = PCB_THICKNESS, convexity = 10, twist = 0)
-    {
-        square([PCB_HV_GEN_X, PCB_HV_GEN_Y], center=true);
-    }
+    Generic_PCB(PCB_THICKNESS, 
+        PCB_HV_GEN_Y, 
+        PCB_HV_GEN_X, 
+        PCB_HV_GEN_DRILL_DISTNCE_X, 
+        PCB_HV_GEN_DRILL_DISTNCE_Y,
+        PCB_HV_GEN_DRILL_DIAMETER);
 }
