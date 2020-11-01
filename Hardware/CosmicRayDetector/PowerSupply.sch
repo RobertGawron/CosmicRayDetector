@@ -1,0 +1,277 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5FA5A87A
+P 2150 4100
+AR Path="/5CEF836A/5FA5A87A" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FA5A87A" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 2150 3850 50  0001 C CNN
+F 1 "GND" H 2155 3927 50  0000 C CNN
+F 2 "" H 2150 4100 50  0001 C CNN
+F 3 "" H 2150 4100 50  0001 C CNN
+	1    2150 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FA5A880
+P 1300 3550
+AR Path="/5CEF836A/5FA5A880" Ref="J?"  Part="1" 
+AR Path="/5FA5724C/5FA5A880" Ref="J2"  Part="1" 
+F 0 "J2" H 1380 3542 50  0000 L CNN
+F 1 "Conn_01x02" H 1380 3451 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 1300 3550 50  0001 C CNN
+F 3 "~" H 1300 3550 50  0001 C CNN
+	1    1300 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA5A886
+P 2150 3800
+AR Path="/5CEF836A/5FA5A886" Ref="C?"  Part="1" 
+AR Path="/5FA5724C/5FA5A886" Ref="C1"  Part="1" 
+F 0 "C1" H 2035 3846 50  0000 R CNN
+F 1 "100n" H 2035 3755 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2188 3650 50  0001 C CNN
+F 3 "~" H 2150 3800 50  0001 C CNN
+	1    2150 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3650 2150 3550
+Connection ~ 2150 3550
+Text GLabel 4750 3550 2    50   Input ~ 0
++3V3
+$Comp
+L Regulator_Linear:AZ1117-3.3 U?
+U 1 1 5FAD2BFE
+P 3550 3550
+AR Path="/5CEF836A/5FAD2BFE" Ref="U?"  Part="1" 
+AR Path="/5FA5724C/5FAD2BFE" Ref="U2"  Part="1" 
+F 0 "U2" H 3550 3792 50  0000 C CNN
+F 1 "AZ1117-3.3" H 3550 3701 50  0000 C CNN
+F 2 "" H 3550 3800 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 3150 2    50   Input ~ 0
++5V
+$Comp
+L Device:CP C7
+U 1 1 5FAD452F
+P 2650 3800
+F 0 "C7" H 2768 3846 50  0000 L CNN
+F 1 "10u" H 2768 3755 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 2688 3650 50  0001 C CNN
+F 3 "~" H 2650 3800 50  0001 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5FAD4841
+P 4000 3800
+F 0 "C9" H 4118 3846 50  0000 L CNN
+F 1 "10u" H 4118 3755 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 4038 3650 50  0001 C CNN
+F 3 "~" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FAD4A8D
+P 4400 3800
+AR Path="/5CEF836A/5FAD4A8D" Ref="C?"  Part="1" 
+AR Path="/5FA5724C/5FAD4A8D" Ref="C10"  Part="1" 
+F 0 "C10" H 4285 3846 50  0000 R CNN
+F 1 "100n" H 4285 3755 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 3650 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAD6F8F
+P 2650 4100
+AR Path="/5CEF836A/5FAD6F8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FAD6F8F" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 2650 3850 50  0001 C CNN
+F 1 "GND" H 2655 3927 50  0000 C CNN
+F 2 "" H 2650 4100 50  0001 C CNN
+F 3 "" H 2650 4100 50  0001 C CNN
+	1    2650 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAD71C7
+P 3550 4100
+AR Path="/5CEF836A/5FAD71C7" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FAD71C7" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 3550 3850 50  0001 C CNN
+F 1 "GND" H 3555 3927 50  0000 C CNN
+F 2 "" H 3550 4100 50  0001 C CNN
+F 3 "" H 3550 4100 50  0001 C CNN
+	1    3550 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAD7406
+P 4000 4100
+AR Path="/5CEF836A/5FAD7406" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FAD7406" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 4000 3850 50  0001 C CNN
+F 1 "GND" H 4005 3927 50  0000 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAD7629
+P 4400 4100
+AR Path="/5CEF836A/5FAD7629" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FAD7629" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 4400 3850 50  0001 C CNN
+F 1 "GND" H 4405 3927 50  0000 C CNN
+F 2 "" H 4400 4100 50  0001 C CNN
+F 3 "" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3550 2650 3550
+Wire Wire Line
+	2650 3650 2650 3550
+Connection ~ 2650 3550
+Wire Wire Line
+	2650 3550 3050 3550
+Wire Wire Line
+	3850 3550 4000 3550
+Wire Wire Line
+	4750 3150 2650 3150
+Wire Wire Line
+	2650 3150 2650 3550
+Wire Wire Line
+	2650 4100 2650 3950
+Wire Wire Line
+	3550 3850 3550 4100
+Wire Wire Line
+	4000 3650 4000 3550
+Connection ~ 4000 3550
+Wire Wire Line
+	4000 3550 4400 3550
+Wire Wire Line
+	4400 3650 4400 3550
+Connection ~ 4400 3550
+Wire Wire Line
+	4400 3550 4750 3550
+Wire Wire Line
+	4000 4100 4000 3950
+Wire Wire Line
+	4400 4100 4400 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5FADDFE8
+P 1900 4100
+AR Path="/5CEF836A/5FADDFE8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FADDFE8" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 1900 3850 50  0001 C CNN
+F 1 "GND" H 1905 3927 50  0000 C CNN
+F 2 "" H 1900 4100 50  0001 C CNN
+F 3 "" H 1900 4100 50  0001 C CNN
+	1    1900 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3950 2150 4100
+$Comp
+L Device:CP C8
+U 1 1 5FAEA51A
+P 3050 3800
+F 0 "C8" H 3168 3846 50  0000 L CNN
+F 1 "10u" H 3168 3755 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 3088 3650 50  0001 C CNN
+F 3 "~" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAEA520
+P 3050 4100
+AR Path="/5CEF836A/5FAEA520" Ref="#PWR?"  Part="1" 
+AR Path="/5FA5724C/5FAEA520" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 3050 3850 50  0001 C CNN
+F 1 "GND" H 3055 3927 50  0000 C CNN
+F 2 "" H 3050 4100 50  0001 C CNN
+F 3 "" H 3050 4100 50  0001 C CNN
+	1    3050 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3650 3050 3550
+Wire Wire Line
+	3050 4100 3050 3950
+Connection ~ 3050 3550
+Wire Wire Line
+	3050 3550 3250 3550
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FD7F18A
+P 1600 3400
+F 0 "#FLG01" H 1600 3475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 3573 50  0000 C CNN
+F 2 "" H 1600 3400 50  0001 C CNN
+F 3 "~" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3650 1600 3650
+Wire Wire Line
+	1500 3550 1600 3550
+Wire Wire Line
+	1600 3400 1600 3550
+Connection ~ 1600 3550
+Wire Wire Line
+	1600 3550 2150 3550
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FD8CEC9
+P 1600 4100
+F 0 "#FLG02" H 1600 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 4273 50  0000 C CNN
+F 2 "" H 1600 4100 50  0001 C CNN
+F 3 "~" H 1600 4100 50  0001 C CNN
+	1    1600 4100
+	-1   0    0    1   
+$EndComp
+Connection ~ 1600 3650
+Wire Wire Line
+	1600 3650 1900 3650
+Wire Wire Line
+	1900 3650 1900 4100
+Wire Wire Line
+	1600 3650 1600 4100
+$EndSCHEMATC
