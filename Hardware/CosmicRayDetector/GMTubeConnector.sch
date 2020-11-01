@@ -18,8 +18,8 @@ L Connector:Conn_01x01_Female J?
 U 1 1 5FA36ACE
 P 3300 2750
 AR Path="/5CEF836A/5FA36ACE" Ref="J?"  Part="1" 
-AR Path="/5FA35CE1/5FA36ACE" Ref="J8"  Part="1" 
-F 0 "J8" H 3192 2935 50  0000 C CNN
+AR Path="/5FA35CE1/5FA36ACE" Ref="J4"  Part="1" 
+F 0 "J4" H 3192 2935 50  0000 C CNN
 F 1 "Conn_01x01_Female" H 3192 2844 50  0000 C CNN
 F 2 "CosmicRayDetector:GeigerTube" H 3300 2750 50  0001 C CNN
 F 3 "~" H 3300 2750 50  0001 C CNN
@@ -31,8 +31,8 @@ L Connector:Conn_01x01_Female J?
 U 1 1 5FA36B5F
 P 3300 3000
 AR Path="/5CEF836A/5FA36B5F" Ref="J?"  Part="1" 
-AR Path="/5FA35CE1/5FA36B5F" Ref="J9"  Part="1" 
-F 0 "J9" H 3192 3185 50  0000 C CNN
+AR Path="/5FA35CE1/5FA36B5F" Ref="J5"  Part="1" 
+F 0 "J5" H 3192 3185 50  0000 C CNN
 F 1 "Conn_01x01_Female" H 3192 3094 50  0000 C CNN
 F 2 "CosmicRayDetector:GeigerTube" H 3300 3000 50  0001 C CNN
 F 3 "~" H 3300 3000 50  0001 C CNN
@@ -44,8 +44,8 @@ L Connector:Conn_01x01_Female J?
 U 1 1 5FA36E08
 P 3300 3250
 AR Path="/5CEF836A/5FA36E08" Ref="J?"  Part="1" 
-AR Path="/5FA35CE1/5FA36E08" Ref="J10"  Part="1" 
-F 0 "J10" H 3192 3435 50  0000 C CNN
+AR Path="/5FA35CE1/5FA36E08" Ref="J6"  Part="1" 
+F 0 "J6" H 3192 3435 50  0000 C CNN
 F 1 "Conn_01x01_Female" H 3192 3344 50  0000 C CNN
 F 2 "CosmicRayDetector:GeigerTube" H 3300 3250 50  0001 C CNN
 F 3 "~" H 3300 3250 50  0001 C CNN
@@ -57,8 +57,8 @@ L Connector:Conn_01x01_Female J?
 U 1 1 5FA37033
 P 3300 3500
 AR Path="/5CEF836A/5FA37033" Ref="J?"  Part="1" 
-AR Path="/5FA35CE1/5FA37033" Ref="J11"  Part="1" 
-F 0 "J11" H 3192 3685 50  0000 C CNN
+AR Path="/5FA35CE1/5FA37033" Ref="J7"  Part="1" 
+F 0 "J7" H 3192 3685 50  0000 C CNN
 F 1 "Conn_01x01_Female" H 3192 3594 50  0000 C CNN
 F 2 "CosmicRayDetector:GeigerTube" H 3300 3500 50  0001 C CNN
 F 3 "~" H 3300 3500 50  0001 C CNN
