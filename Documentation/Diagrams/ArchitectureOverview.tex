@@ -17,45 +17,50 @@
 \pgfdeclarelayer{background}
 \pgfsetlayers{background,main}
 
-\node (CosmicRayParticle) [circle, interface] {Cosmic Ray\\ Particle};
+    \node (CosmicRayParticle) [circle, interface] {Cosmic Ray\\ Particle};
 
-\node (GMTubes) [component, below=of CosmicRayParticle] {3x3 grid of\\ GM Detectors};
+    \node (GMTubes) [component, below=of CosmicRayParticle] {4x4 Grid of\\ GM Tubes};
 
-\node (PolarizationVoltage) [component, below=of GMTubes] {HV polarization\\ (400V DC)};
 
-\node (GMDataPreProcessing) [component, right=of GMTubes] {Analog GM signal\\ to digital level converters \\ (one for each GM tube)};
+    \node (ADConverters) [component, below=of GMTubes] {4x4 Grid of\\ A/D Converters)};
 
-\node (GMDataProcessing) [component, right=of GMDataPreProcessing] {Data processing and\\ position driving\\ (FPGA Cyclone IV)};
+    \node (GMDataProcessing) [component, below=of ADConverters] {Data Processing\\ (FPGA Cyclone IV)};
 
-\node (StepMotorController) [component, below=of GMDataProcessing] {StepMotor Controller};
+    \node (BlootothController) [component, right=of GMDataProcessing] {Bloototh Controller};
 
-\node (WiFiBlootothController) [component, right=of GMDataProcessing] {WiFi/Bloototh Controller};
+    \node (UserInterface) [component, above=of BlootothController] {User Interface};
 
-\node (OutputInterface) [circle, interface, right=of WiFiBlootothController] {IN/OUT};
+    \node (PolarizationVoltage) [component, above=of UserInterface] {HV Polarization\\ (400V DC)};
 
+
+    \node (UserInterface_InOut) [circle, interface, right=of UserInterface] {IN/OUT};
+
+    \node (BlootothController_InOut) [circle, interface, below=of UserInterface_InOut] {IN/OUT};
 
 \begin{pgfonlayer}{background}
-\node[system, draw, thick, inner xsep=1em, inner ysep=1em, fit= (PolarizationVoltage) (GMDataPreProcessing) (GMDataProcessing) (StepMotorController) (WiFiBlootothController)] {};
+\node[system, draw, thick, inner xsep=1em, inner ysep=1em, fit= (PolarizationVoltage) (ADConverters) (GMDataProcessing) (ADConverters) (BlootothController)] {};
 \end{pgfonlayer}
 
 % Connectors
 \begin{scope}[->]
 
-\draw [-{Latex[scale=3.0]}] (CosmicRayParticle) -- node[anchor=west, minimum width=.25cm, draw=none] {Radioactive decay} (GMTubes);
+    \draw [-{Latex[scale=2.0]}] (CosmicRayParticle) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMTubes);
+    \draw [-{Latex[scale=2.0]}] (GMTubes) -- node[anchor=west, minimum width=.25cm, draw=none] {} (ADConverters);
+    \draw [-{Latex[scale=2.0]}] (PolarizationVoltage) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMTubes);
+    \draw [-{Latex[scale=2.0]}] (ADConverters) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMDataProcessing);
 
-\draw [-{Latex[scale=3.0]}] (GMTubes) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMDataPreProcessing);
-\draw [-{Latex[scale=3.0]}] (PolarizationVoltage) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMTubes);
-\draw [-{Latex[scale=3.0]}] (GMDataPreProcessing) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMDataProcessing);
+    \draw [-{Latex[scale=2.0]}] (GMDataProcessing) -- node[anchor=west, minimum width=.25cm, draw=none] {} (BlootothController);
+    \draw [-{Latex[scale=2.0]}] (BlootothController) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMDataProcessing);
 
-\draw [-{Latex[scale=3.0]}] (GMDataProcessing) -- node[anchor=west, minimum width=.25cm, draw=none] {} (WiFiBlootothController);
-\draw [-{Latex[scale=3.0]}] (WiFiBlootothController) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMDataProcessing);
-
-\draw [-{Latex[scale=3.0]}] (GMDataProcessing) -- node[anchor=west, minimum width=.25cm, draw=none] {} (StepMotorController);
-
-\draw [-{Latex[scale=3.0]}] (WiFiBlootothController) -- node[anchor=west, minimum width=.25cm, draw=none] {} (OutputInterface);
-\draw [-{Latex[scale=3.0]}] (OutputInterface) -- node[anchor=west, minimum width=.25cm, draw=none] {} (WiFiBlootothController);
+    \draw [-{Latex[scale=2.0]}] (GMDataProcessing) -- node[anchor=west, minimum width=.25cm, draw=none] {} (UserInterface);
+    \draw [-{Latex[scale=2.0]}] (UserInterface) -- node[anchor=west, minimum width=.25cm, draw=none] {} (GMDataProcessing);
 
 
+    \draw [-{Latex[scale=2.0]}] (BlootothController_InOut) -- node[anchor=west, minimum width=.25cm, draw=none] {} (BlootothController);
+    \draw [-{Latex[scale=2.0]}] (BlootothController) -- node[anchor=west, minimum width=.25cm, draw=none] {} (BlootothController_InOut);
+
+    \draw [-{Latex[scale=2.0]}] (UserInterface) -- node[anchor=west, minimum width=.25cm, draw=none] {} (UserInterface_InOut);
+    \draw [-{Latex[scale=2.0]}] (UserInterface_InOut) -- node[anchor=west, minimum width=.25cm, draw=none] {} (UserInterface);
 
 \end{scope}
 
