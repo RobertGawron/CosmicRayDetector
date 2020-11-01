@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:CosmicRayDetector-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -116,16 +115,4 @@ Wire Wire Line
 	4650 4650 4650 4600
 Wire Wire Line
 	5500 4650 5500 4600
-$Sheet
-S 1650 2900 950  150 
-U 5D6F8E96
-F0 "PowerManagement" 50
-F1 "PowerManagement.sch" 50
-$EndSheet
-$Sheet
-S 1650 3450 500  300 
-U 5D715225
-F0 "MovementController" 50
-F1 "MovementController.sch" 50
-$EndSheet
 $EndSCHEMATC
