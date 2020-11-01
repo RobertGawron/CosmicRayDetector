@@ -5,7 +5,7 @@
 \definecolor{componentColor}{RGB}{210,210,210}
 \definecolor{systemColor}{RGB}{230,230,230}
 
-\tikzset{component/.append style={fill=componentColor, align=center, draw, minimum width=2cm, minimum height=1.5cm, rounded corners=.3cm,node distance=2cm and 1.5cm}}
+\tikzset{component/.append style={fill=componentColor, align=center, draw, minimum width=2cm, minimum height=1.5cm, rounded corners=.3cm,node distance=0.8cm and 1.5cm}}
 \tikzset{system/.style={component, fill=systemColor, rounded corners=0cm}}
 \tikzset{interface/.style={system, fill=systemColor, minimum size=1.6cm}}
 
@@ -19,7 +19,7 @@
 
     \node (CosmicRayParticle) [circle, interface] {Cosmic Ray\\ Particle};
 
-    \node (GMTubes) [component, below=of CosmicRayParticle] {4x4 Grid of\\ GM Tubes};
+    \node (GMTubes) [component, right=of CosmicRayParticle] {4x4 Grid of\\ GM Tubes};
 
 
     \node (ADConverters) [component, below=of GMTubes] {4x4 Grid of\\ A/D Converters)};
