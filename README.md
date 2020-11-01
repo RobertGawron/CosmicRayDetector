@@ -13,7 +13,7 @@ Earth has its own background radioactivity level and this would add to the measu
 
 This device has a grid of Geiger tubes and analyzes if a particle went through many of them, if yes, it's probably a muon, if no, it's background radiation. To help minimize background radiation,  lead shielding will be placed around Geiger tubes.
 
-There are similar projects around Internet, but they all have analog interface, this one is aiming to have digitally processed interface, so that it will be possible to present results in more readable form, or to analyze them further on PC.
+There are similar projects around Internet, but they all have analog interface, this one is aiming to have digital processing, so that it will be possible to present results in more readable form, or to analyze them further on PC.
 
 
 ## System architecture
@@ -21,25 +21,26 @@ There are similar projects around Internet, but they all have analog interface, 
 <img src="./Documentation/Diagrams/ArchitectureOverview.svg"  width="100%">
 
 
-## Overwiew of the mechanical design
+## Mechanical design
 
 ![render of the device](./Documentation/Pictures/render_31_10_2020.png)
 
-* 3D printed parts were created in OpenSCAD.
-* KiCad component models were done in FreeCAD, because it's default tool for that.
-* KiCad PCBs were exported using FreeCAD to .scad files. It was the only way I found to import KiCad files to OpenSCAD. 
+On the center of above image is visible a grid of 4x4 Geiger tubes. On the left and right sie are PCBs connected to GM Tubes, those PCB contains of A/D converters and are connected to FPGA board visible on top left side of the image. On the right side is visible a stack of PCBs, those are connected to GM tubes, and high voltage generator, that is visible on top right side. In front of the image, on the left is visible a PCB of a display. 
 
-Parts for 3D printing were done in FreeCAD.
+Parts for 3D printing and model of the whole device were designed in OpenSCAD. Above renderer was done in Blender.
 
 
 ## Hardware
-* PCB was designed in KiCAD.
-* [DC/Dc converter from this Geiger-Muller counter](https://github.com/RobertGawron/GeigerMullerCounter) is used as a source of high voltage.
+
+* [DC/DC converter from this Geiger-Muller counter](https://github.com/RobertGawron/GeigerMullerCounter) was used as a source of high voltage.
+* Geiger tube model is STS-5 (СTC-5) 
+
+PCB was designed in KiCAD.
 
 
 ## Software
 
-* FPGA (Cyclone IV) firmware was written in verilog using QuartusLite as IDE. 
+* FPGA (Cyclone IV) firmware will be written in verilog using QuartusLite as IDE. 
 * [Setting up development environment on Windows
 ](https://github.com/RobertGawron/CosmicRayDetector/wiki/Setting-up-development-environment-on-Windows)
 
