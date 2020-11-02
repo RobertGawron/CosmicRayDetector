@@ -177,13 +177,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5D788AE1
-P 5100 3700
-F 0 "J1" H 5180 3692 50  0000 L CNN
-F 1 "Conn_01x04" H 5180 3601 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 5100 3700 50  0001 C CNN
-F 3 "~" H 5100 3700 50  0001 C CNN
-	1    5100 3700
-	1    0    0    -1  
+P 5100 3800
+F 0 "J1" H 5180 3792 50  0000 L CNN
+F 1 "Conn_01x04" H 5180 3701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5100 3800 50  0001 C CNN
+F 3 "~" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	2150 2650 3000 2650
