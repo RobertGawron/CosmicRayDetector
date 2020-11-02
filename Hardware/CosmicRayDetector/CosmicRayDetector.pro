@@ -1,4 +1,4 @@
-update=01/11/2020 17:14:08
+update=02/11/2020 11:24:01
 version=1
 last_client=kicad
 [general]
@@ -41,7 +41,7 @@ MinHoleToHole=0.25
 TrackWidth1=0.3048
 TrackWidth2=0.254
 TrackWidth3=0.3048
-TrackWidth4=0.508
+TrackWidth4=1.5
 ViaDiameter1=1.3
 ViaDrill1=0.6
 ViaDiameter2=1
@@ -253,7 +253,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=high voltage
-Clearance=0.254
+Clearance=0.75
 TrackWidth=2
 ViaDiameter=1.3
 ViaDrill=0.6
