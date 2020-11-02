@@ -32,6 +32,7 @@ Parts for 3D printing and model of the whole device were designed in OpenSCAD. A
 
 ## Hardware
 
+
 ![render of the device](./Documentation/Pictures/render_top_02_11_2020)
 
 To decrease manufacturing costs, the same PCB is used as:
