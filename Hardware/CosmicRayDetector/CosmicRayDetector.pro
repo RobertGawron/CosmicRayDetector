@@ -1,4 +1,4 @@
-update=02/11/2020 11:24:01
+update=09/11/2020 12:13:54
 version=1
 last_client=kicad
 [general]
@@ -253,7 +253,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=high voltage
-Clearance=0.75
+Clearance=2.75
 TrackWidth=2
 ViaDiameter=1.3
 ViaDrill=0.6
