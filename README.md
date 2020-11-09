@@ -33,14 +33,14 @@ Parts for 3D printing and model of the whole device were designed in OpenSCAD. A
 ## Hardware
 
 
-![render of the device](./Documentation/Pictures/render_top_02_11_2020.png)
+![render of the device](./Documentation/Pictures/render_top_09_11_2020.png)
 
 To decrease manufacturing costs, the same PCB is used as:
 - A/D converter.
 - Connector between GM tube and high voltage generator.
 - User interface.
 
-Render above show top side of fully assembled PCB, however in real device, depends on PCB usage, only some components will be placed (e.g. no need for GM tube holder in PCB used as a display). More details in  Hardware/CosmicRayDetector/README.md. 
+Render above show top side of fully assembled PCB, however in real device, depends on PCB usage, only some components will be placed (e.g. no need for GM tube holder in PCB used as a display) [[more info]](./Hardware/CosmicRayDetector/README.md). 
 
 * [DC/DC converter from this Geiger-Muller counter](https://github.com/RobertGawron/GeigerMullerCounter) was used as a source of high voltage.
 * Geiger tube model is STS-5 (СTC-5) 
