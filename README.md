@@ -2,7 +2,7 @@
 
 **This project is unfinished.**
 
-[![Docs Generation](https://github.com/RobertGawron/CosmicRayDetector/workflows/Docs%20Generation/badge.svg)](https://github.com/RobertGawron/CosmicRayDetector/actions?query=workflow%3A%22Docs+Generation%22)
+[![Docs Generation](https://github.com/RobertGawron/CosmicRayDetector/workflows/Docs%20Generation/badge.svg)](https://github.com/RobertGawron/CosmicRayDetector/actions?query=workflow%3A%22Docs+Generation%22)  [![Static Code Analysis](https://github.com/RobertGawron/CosmicRayDetector/workflows/Static%20Code%20Analysis/badge.svg)](https://github.com/RobertGawron/CosmicRayDetector/actions?query=workflow%3A%22Static+Code+Analysis%22)
 
 
 ## Summary
