@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name IonizationChamber)(type KiCad)(uri ${KIPRJMOD}/IonizationChamber.pretty)(options "")(descr "")(disabled))
-  (lib (name SwitchButtonGeneric)(type KiCad)(uri ${KIPRJMOD}/SwitchButtonGeneric.pretty)(options "")(descr "")(disabled))
-  (lib (name CosmicRayDetector)(type KiCad)(uri ${KIPRJMOD}/CosmicRayDetector.pretty)(options "")(descr ""))
-)
