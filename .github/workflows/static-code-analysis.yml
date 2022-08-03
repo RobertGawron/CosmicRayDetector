@@ -1,0 +1,27 @@
+name: Static Code Analysis
+
+on: [push]
+
+jobs:
+  build_and_test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v1
+    - name: install shellcheck and run tests
+      if: always()
+      run: |
+        sudo apt-get install -y shellcheck
+        cd ./ContinuousIntegration
+        chmod +x ./run_shellscripts_static_code_analysis.sh
+        ls
+        ./run_shellscripts_static_code_analysis.sh
+
+    - name: Archive shell scripts results
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: Report for shell scripts sources
+        path: ./ContinuousIntegration/Shell_Script_Lint_Report.txt
