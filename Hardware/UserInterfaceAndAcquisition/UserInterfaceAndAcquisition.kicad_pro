@@ -346,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "CosmicRayDetector.kicad_pro",
+    "filename": "UserInterfaceAndAcquisition.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -378,13 +378,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "high voltage",
-        "nets": [
-          "/HVConnector/HIGH_VOLTAGE",
-          "GM_CONNECTOR_1",
-          "GM_CONNECTOR_2",
-          "GM_CONNECTOR_3",
-          "GM_CONNECTOR_4"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
@@ -455,16 +449,8 @@
       ""
     ],
     [
-      "00000000-0000-0000-0000-00005cef836a",
-      "ADC"
-    ],
-    [
-      "00000000-0000-0000-0000-00005fa35ce1",
-      "GMTubeConnector"
-    ],
-    [
-      "00000000-0000-0000-0000-00005fa2327e",
-      "HVConnector"
+      "f3e7ee74-9fc5-427e-a2dd-246acfd77cf1",
+      "Acquisition"
     ],
     [
       "00000000-0000-0000-0000-00005f9e7696",

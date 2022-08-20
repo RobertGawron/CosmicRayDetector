@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "CosmicRayDetector")(type "KiCad")(uri "${KIPRJMOD}/CosmicRayDetector.pretty")(options "")(descr ""))
+)
