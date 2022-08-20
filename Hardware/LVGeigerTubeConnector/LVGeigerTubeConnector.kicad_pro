@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -115,6 +121,7 @@
         0.0,
         0.254,
         0.3048,
+        0.5,
         1.5
       ],
       "via_dimensions": [
@@ -346,7 +353,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "CosmicRayDetector.kicad_pro",
+    "filename": "LVGeigerTubeConnector.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -447,14 +454,6 @@
     [
       "df22f030-9a54-4acb-b222-c259da8ddd0f",
       ""
-    ],
-    [
-      "00000000-0000-0000-0000-00005fa35ce1",
-      "GMTubeConnector"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f9e7696",
-      "Mechanic"
     ]
   ],
   "text_variables": {}
