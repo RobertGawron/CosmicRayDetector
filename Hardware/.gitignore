@@ -26,3 +26,6 @@ _autosave-*
 *.csv
 
 *.sch-bak
+
+# kicad 5 specific
+*-backups
