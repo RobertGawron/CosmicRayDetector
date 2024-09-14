@@ -1,0 +1,24 @@
+@startuml
+' Define the cosmic ray particle artifact
+artifact "Cosmic Ray\nParticle" as cosmic_ray_particle
+
+' Define the Cosmic Ray Detector as a component with various internal artifacts
+component "Cosmic Ray Detector" as cosmic_ray_detector {
+    artifact "4x4 Grid of\nGM Tubes" as gm_tubes
+    artifact "HV Polarization\n(400V DC)" as polarization_voltage
+    artifact "4x4 Grid of\nA/D Converters" as adc_converters
+    artifact "Data Processing\n(FPGA Cyclone IV)" as gm_data_processing
+    artifact "User Interface" as user_interface
+}
+
+' Define connections and relationships between the components
+cosmic_ray_particle -down-> gm_tubes : "Detected by"
+polarization_voltage -left-> gm_tubes : "Polarizes"
+gm_tubes -down-> adc_converters : "Pulse of current when radiation particle detected"
+adc_converters -down-> gm_data_processing : "Analog to digital"
+gm_data_processing -down-> user_interface : "Processed data"
+
+' User interaction with the User Interface
+actor "User" as user
+user -up-> user_interface : "Interacts with"
+@enduml

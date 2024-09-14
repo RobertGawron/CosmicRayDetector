@@ -1,0 +1,165 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "df22f030-9a54-4acb-b222-c259da8ddd0f")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 105.41 45.72)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005cef836a")
+		(property "Sheetname" "ADC"
+			(at 105.41 45.0845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC.kicad_sch"
+			(at 105.41 50.0385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CosmicRayDetector"
+				(path "/df22f030-9a54-4acb-b222-c259da8ddd0f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 45.72)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005f9e7696")
+		(property "Sheetname" "Mechanic"
+			(at 127 45.0845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Mechanic.kicad_sch"
+			(at 127 50.0385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CosmicRayDetector"
+				(path "/df22f030-9a54-4acb-b222-c259da8ddd0f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 45.72)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005fa231f7")
+		(property "Sheetname" "UserInterface"
+			(at 151.13 45.0845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "UserInterface.kicad_sch"
+			(at 151.13 50.0385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CosmicRayDetector"
+				(path "/df22f030-9a54-4acb-b222-c259da8ddd0f"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 64.77)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005fa5724c")
+		(property "Sheetname" "PowerSupply"
+			(at 74.93 64.1345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerSupply.kicad_sch"
+			(at 74.93 69.0885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CosmicRayDetector"
+				(path "/df22f030-9a54-4acb-b222-c259da8ddd0f"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
